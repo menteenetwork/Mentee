@@ -27,9 +27,11 @@ import LearnCourse from "./LearnCourse"
 import Groups from "./Groups"
 import Group from "./Group"
 import GroupChannel from "./GroupChannel"
+import CreateGroup from "./CreateGroup"
+import ChatHistory from "./ChatHistory"
+import MyNetworkMentees from "./MyNetworkMentees"
+import MyNetworkMentors from "./MyNetworkMentors" 
 
-
- 
 function Main () {
 return ( 
     
@@ -69,6 +71,10 @@ return (
             <Route path="/groups" component={Groups}/>
             <Route path="/group" component={Group}/>
             <Route path="/groupchannel" component={GroupChannel}/>
+            <Route path="/creategroup" component={CreateGroup}/>
+            <Route path="/chathistory" component={ChatHistory}/>
+            <Route path="/mynetworkmentees" component={MyNetworkMentees}/>
+            <Route path="/mynetworkmentors" component={MyNetworkMentors}/>
         	<div className="Main">
         	
         	

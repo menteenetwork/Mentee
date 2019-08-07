@@ -12,7 +12,9 @@ function Groups () {
      
        </nav>
         <h2>Mathematics</h2>
-        <div class="button"><NavLink to="/mymentees">MY MENTEES</NavLink></div><div class="button"><NavLink to="/mymentors">MY MENTORS</NavLink></div><div class="button"><NavLink to="/groups">MY GROUPS</NavLink></div>
+        <div class="button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
+        <div class="button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
+        <div class="button"><NavLink to="/groups">MY GROUPS</NavLink></div>
     
 	{/* Here should appear different groups a mentee has joined  */}
       	<ul>

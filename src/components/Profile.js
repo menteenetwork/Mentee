@@ -15,8 +15,8 @@ function Profile () {
         <p>available MNT</p>
         <p>staked MNT</p>
         <p>total MNT</p>
-		<div class="button">MY NETWORK</div>
-      	{/* Redirect to the page with all members a user is connected with */}
+		<div class="button"><NavLink to="/mynetworkmentees">MY NETWORK</NavLink></div>
+      	
 
         <h3>About</h3>
 		{/* Insert text field here */}
