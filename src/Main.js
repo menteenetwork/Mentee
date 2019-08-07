@@ -1,6 +1,6 @@
 import React from "react"
 import {
-  Route,
+	Route,
   HashRouter,
   NavLink,
   Redirect,
@@ -21,11 +21,12 @@ import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Index from "./index.css"
 import MembersPage from "./Members"
-import MemberCard from "./MemberCard"
 import NotFoundPage from "./NotFoundPage"
 import DesignCourse from "./DesignCourse"
 import LearnCourse from "./LearnCourse"
 import Groups from "./Groups"
+import Group from "./Group"
+import GroupChannel from "./GroupChannel"
 
 
  
@@ -66,6 +67,8 @@ return (
             <Route path="/designcourse" component={DesignCourse}/>
             <Route path="/learncourse" component={LearnCourse}/>
             <Route path="/groups" component={Groups}/>
+            <Route path="/group" component={Group}/>
+            <Route path="/groupchannel" component={GroupChannel}/>
         	<div className="Main">
         	
         	
