@@ -28,8 +28,8 @@ function Profile () {
 		
             
       	<h3>Blockchain CV</h3>      
- 		<div class="button">GENERAL</div>
- 		<div class="button"><NavLink to="/courses">COURSES</NavLink></div>
+ 		<div class="button"><NavLink to="/cvgeneral">GENERAL</NavLink></div>
+ 		<div class="button"><NavLink to="/cvcourses">COURSES</NavLink></div>
  		
 		
  		

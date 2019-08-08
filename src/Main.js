@@ -31,6 +31,8 @@ import CreateGroup from "./CreateGroup"
 import ChatHistory from "./ChatHistory"
 import MyNetworkMentees from "./MyNetworkMentees"
 import MyNetworkMentors from "./MyNetworkMentors" 
+import CVGeneral from "./CVGeneral" 
+import CVCourses from "./CVCourses" 
 
 function Main () {
 return ( 
@@ -75,6 +77,8 @@ return (
             <Route path="/chathistory" component={ChatHistory}/>
             <Route path="/mynetworkmentees" component={MyNetworkMentees}/>
             <Route path="/mynetworkmentors" component={MyNetworkMentors}/>
+            <Route path="/cvgeneral" component={CVGeneral}/>
+            <Route path="/cvcourses" component={CVCourses}/>
         	<div className="Main">
         	
         	

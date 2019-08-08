@@ -10,11 +10,11 @@ function MyNetworkMentees () {
       <div>
          
          <div class="button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
-         <div class="button"><NavLink to="/mynetowrkmentors">MY MENTORS</NavLink></div>
+         <div class="button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
         <div class="button"><NavLink to="/groups">MY GROUPS</NavLink></div>
         	<ul>
         	<p>+  Search mentee</p>
-        	{/* Here should appear a search field for mentees
+        	{/* Here should appear a search field for mentees 
         
        	 	Here should appear a list of mentees user has in his own network		
  			*/}
