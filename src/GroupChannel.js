@@ -20,21 +20,17 @@ return(
  		<img className="img-respons" src={"../../assets/images/icon-user-avatar.jpg"} alt="mentee"/>
  		</div>
  		
- 		{/* The icons should connect to the specific components: Members, CreateGroup, FileTransfer, MyNetworkMentees  
- 		
- 		*/}
  		<div>
- 		<img className="img-responsive" src={"../../assets/images/icon-user.png"} alt="add mentee" a href="/members" />
-		<Route exact path="/members" component={Members}/>
+ 		<NavLink to="/members"><img className="img-responsive" src={"../../assets/images/icon-user.png"} alt="add mentee"/></NavLink>
 		</div>
 		<div>
- 		<img className="img-responsive" src={"../../assets/images/icon-group.png"} alt="create group"/>
+ 		<NavLink to="/creategroup"><img className="img-responsive" src={"../../assets/images/icon-group.png"} alt="create group"/></NavLink>
  		</div>
  		<div>
- 		<img className="img-responsive" src={"../../assets/images/icon-transfer.png"} alt="files transfer"/>
+ 		<NavLink to="/filetransfer"><img className="img-responsive" src={"../../assets/images/icon-transfer.png"} alt="files transfer"/></NavLink>
  		</div>
  		<div>
- 		<img className="img-responsive" src={"../../assets/images/icon-network.png"} alt="my network"/>
+ 		<NavLink to="/mynetworkmentees"><img className="img-responsive" src={"../../assets/images/icon-network.png"} alt="my network"/></NavLink>
  		</div>
   	
   	

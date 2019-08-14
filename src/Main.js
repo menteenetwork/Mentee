@@ -1,4 +1,5 @@
 import React from "react"
+
 import {
 	Route,
   HashRouter,
@@ -8,6 +9,7 @@ import {
  } 
  
  from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home"
 import Stuff from "./components/Stuff";
 import Contact from "./components/Contact"
@@ -20,7 +22,7 @@ import Profile from "./components/Profile"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Index from "./index.css"
-import MembersPage from "./Members"
+import Members from "./Members"
 import NotFoundPage from "./NotFoundPage"
 import DesignCourse from "./DesignCourse"
 import LearnCourse from "./LearnCourse"
@@ -33,6 +35,9 @@ import MyNetworkMentees from "./MyNetworkMentees"
 import MyNetworkMentors from "./MyNetworkMentors" 
 import CVGeneral from "./CVGeneral" 
 import CVCourses from "./CVCourses" 
+import Details from "./Details"
+
+
 
 function Main () {
 return ( 
@@ -65,7 +70,7 @@ return (
             <Route path="/blog" component={Blog}/>
             <Route path="/login" component={Login}/>
             <Route path="/profile" component={Profile}/>
-            <Route exact path="/members" component={MembersPage}/>
+            <Route exact path="/members" component={Members}/>
             <Route exact path="/notfoundpage" component={NotFoundPage}/>
             <Redirect to="/NotFoundPage"/>
             <Route path="/designcourse" component={DesignCourse}/>
@@ -79,6 +84,8 @@ return (
             <Route path="/mynetworkmentors" component={MyNetworkMentors}/>
             <Route path="/cvgeneral" component={CVGeneral}/>
             <Route path="/cvcourses" component={CVCourses}/>
+            <Route path="/details" component={Details}/>
+            
         	<div className="Main">
         	
         	

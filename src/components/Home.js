@@ -7,6 +7,7 @@ import {
 function Home () {
     return (
       <div>
+      <i class="fas fa-home"></i>
         <h2>BE THE CHANGE 
 		YOU WANT TO SEE
 		IN THE WORLD</h2>
@@ -15,10 +16,10 @@ Join the community of people whose main objective is helping others
 in disclosing their potential driving to personal success </h3>
         
         <p>WHY YOU SHOULD BECOME A MENTEE</p>
-        <li><NavLink to="/members">Find mentors</NavLink></li>
-        <li><NavLink to="/">Perform tasks</NavLink></li>
-        <li><NavLink to="/members">Be discovered</NavLink></li>
-        <li><NavLink to="/profile">Forge your CV</NavLink></li>
+        <li><i class="fas fa-users"></i><NavLink to="/members">Find mentors</NavLink></li>
+        <li><i class="fas fa-tools"></i><NavLink to="/">Perform tasks</NavLink></li>
+        <li><i class="fas fa-search"></i><NavLink to="/members">Be discovered</NavLink></li>
+        <li><i class="far fa-address-card"></i><NavLink to="/profile">Forge your CV</NavLink></li>
         
         <h4>Access the power of mentors</h4>
 		<p>Learn, gain new skills, record them on the blockchain, and prove others what you really know doing</p>

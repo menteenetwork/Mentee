@@ -14,7 +14,7 @@ return(
 	
 	<p>Available courses</p>
 	
-	<ul>
+	
     <li><NavLink to={`${match.url}/Mathematics`}>Mathematics</NavLink></li>
     
     {/* Algebra is a subcategory of Mathematics and it should appear only when 
@@ -24,7 +24,7 @@ return(
     <ul><li><NavLink to={`${match.url}/Mathematics/Algebra`}>Algebra</NavLink></li></ul>
     <li><NavLink to={`${match.url}/ComputerScience`}>Computer Science</NavLink></li>
     <li><NavLink to={`${match.url}/Engeeniering`}>Engeeniering</NavLink></li>
-	</ul>
+	
   	
   	<Route path={`${match.path}/:name`} render= {({match}) =>( 
   	<div> 
