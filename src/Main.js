@@ -36,6 +36,7 @@ import MyNetworkMentors from "./MyNetworkMentors"
 import CVGeneral from "./CVGeneral" 
 import CVCourses from "./CVCourses" 
 import Details from "./Details"
+import Modal from "./Modal"
 
 
 
@@ -86,20 +87,22 @@ return (
             <Route path="/cvcourses" component={CVCourses}/>
             <Route path="/details" component={Details}/>
             
+        	
         	<div className="Main">
         	
         	
         	</div> 
         	
     </div>
-    		
+    	
         <Stuff />
         <Footer />
-       
+        <Modal />
         </div>
        
     </Switch>  
     </HashRouter>
+    
     )
     }
     

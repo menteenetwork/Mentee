@@ -1,4 +1,5 @@
 import React from "react"
+import styled from 'styled-components';
 import {
 NavLink,
 }
@@ -9,9 +10,12 @@ function MyNetworkMentors () {
     return (
       <div>
          
-         <div class="button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
-         <div class="button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
-         <div class="button"><NavLink to="/groups">MY GROUPS</NavLink></div>
+         <TabContainer>
+         <div class="btn-group button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
+         <div class="btn-group button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
+         <div class="btn-group button"><NavLink to="/groups">MY GROUPS</NavLink></div>
+        	</TabContainer>
+         
         	<ul>
         	<p>+  Search mentor
         	</p>
@@ -31,3 +35,4 @@ function MyNetworkMentors () {
 
  
 export default MyNetworkMentors
+const TabContainer = styled.div``

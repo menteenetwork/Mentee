@@ -1,4 +1,5 @@
 import React from "react"
+import styled from 'styled-components';
 import {
 NavLink,
 Route
@@ -11,10 +12,13 @@ function Groups () {
       <nav>
      
        </nav>
+        
+        <TabContainer>
+         <div class="btn-group button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
+         <div class="btn-group button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
+         <div class="btn-group button"><NavLink to="/groups">MY GROUPS</NavLink></div>
+        </TabContainer>
         <h2>Mathematics</h2>
-        <div class="button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
-        <div class="button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
-        <div class="button"><NavLink to="/groups">MY GROUPS</NavLink></div>
     
 	{/* Here should appear different groups a mentee has joined  */}
       	<ul>
@@ -39,3 +43,4 @@ function Groups () {
  
 export default Groups
 
+const TabContainer = styled.div``

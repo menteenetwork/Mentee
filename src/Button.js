@@ -6,17 +6,19 @@ text-transform: capitalize;
 font-size: 1.4rem;
 bacground: transparent;
 border: 0.05rem solid var(--mainGreen);
-color: var(--mainGreen);
-border-radius:0.5rem;
+color: ${prop => prop.MyNetworkMentees ? "var(--mainGreen)" : "var(--mainGreen)"};
+border-radius:0.8rem;
 cursor: pointer;
 margin: 0.2rem 0.5rem 0.2rem 0;
 transition: all 0.5s ease-in-out;
+font-size: 16px;
 
 &:hover {
-	bacground: var(--mainGreen);
-	color: var(mainWhite);
+	bacground: ${prop => prop.MyNetworkMentees ? "var(--mainGreen)" : "var(--mainGreen)"};
+	color: var(--mainWhite);
 }
 &:focus {
 	outline:none;
 }
 `;
+
