@@ -15,6 +15,7 @@ class MemberProvider extends Component {
 	modalOpen:false,
 	modalMember:[],
 	
+    
 	};
 	
 	componentDidMount(){
@@ -31,6 +32,8 @@ this.setState(()=>{
 return {members:tempMembers};
 });
 };
+
+
 
 
 getUser = id =>{
@@ -82,11 +85,10 @@ removeUser = (id) =>{
 	
 tempNetwork = tempNetwork.filter(user => user.id !== id);
 
-const index = tempMembers.indexOf(this.getUser());
-let removedMember = tempMembers[index];
-removedMember.inNetwork = false;
-removedMember.count = 0;
-
+	const index = tempMembers.indexOf(this.getUser());
+	let removedMember = tempMembers[index];
+	removedMember.inNetwork = false;
+	removedMember.count = 0;
 
 this.setState(()=>{
 	return{
@@ -96,6 +98,9 @@ this.setState(()=>{
 }
 })
 }
+
+
+
 
 	render() {
 	

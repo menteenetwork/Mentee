@@ -11,18 +11,28 @@ import styled from 'styled-components';
 function MyNetworkMentees () {
     return (
       <div>
-         <TabContainer>
-         <div class="btn-group button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
-         <div class="btn-group button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
-         <div class="btn-group button"><NavLink to="/groups">MY GROUPS</NavLink></div>
-        	</TabContainer>
-        	<ul>
-        	<p>+  Search mentee</p>
-        	{/* Here should appear a search field for mentees 
+         
+         	<div class="btn-group button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
+         	<div class="btn-group button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
+         	<div class="btn-group button"><NavLink to="/groups">MY GROUPS</NavLink></div>
         
-       	 	Here should appear a list of mentees user has in his own network		
- 			*/}
- 			<MemberConsumer>
+        
+        {/* Here should appear a search field for mentees */}
+ 			
+        <TabContainer>
+        	<div className="searchBar">
+        	
+          		<form>
+            		<input placeholder="Add a new member">
+            		</input>
+            		<button type="submit">SEARCH</button>
+          		</form>
+        	
+     	 	</div>
+        </TabContainer>
+        	
+ 		<MemberConsumer>
+         
          {value =>{
          	const {MyNetworkMentees} = value;
          	if(MyNetworkMentees.length>0){
@@ -31,7 +41,6 @@ function MyNetworkMentees () {
          			<Title title="My mentees" />
       				<NetworkColumns />
       				<MembersList value={value}/>
-      				
       			</React.Fragment>
          		);
          	}else{
@@ -39,20 +48,7 @@ function MyNetworkMentees () {
          	}
          	}}
          </MemberConsumer>
- 			
- 			<p>Alice<div class="button"><NavLink to="/chathistory">CHAT</NavLink></div></p>
-  			<p>Alice<div class="button"><NavLink to="/chathistory">CHAT</NavLink></div></p>
- 			<p>Alice<div class="button"><NavLink to="/chathistory">CHAT</NavLink></div></p>
- 			<p>Alice<div class="button"><NavLink to="/chathistory">CHAT</NavLink></div></p>
- 			</ul>
-         <section>
-         
-      	
-      	
-      </section>
-      </div>
-      
-     
+ 		</div>
     )
   }
 

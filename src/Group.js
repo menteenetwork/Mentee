@@ -18,10 +18,10 @@ return(
  		- CAD
  		- Web design
  		
-
- 		<div class="button"><NavLink to="/groupchannel">ACCESS GROUP CHANNEL</NavLink></div>
+		<h4>Access group channel</h4>
+ 		<div class="button"><NavLink to="/groupchannel">ACCESS</NavLink></div>
  		
- 		<h3>Group members</h3>
+ 		
  		<Members />
   	</div>
   )

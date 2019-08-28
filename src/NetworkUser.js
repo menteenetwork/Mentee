@@ -1,32 +1,53 @@
 import React from "react"
+import styled from 'styled-components';
+import {NavLink} from "react-router-dom";
 
 
 function NetworkUser ({user,value}) {
-const{id, name, img, menteepower, count} = user;
+const{id, name, img, menteepower,profession, count} = user;
 const{ removeUser} = value;
+const{ chatUser} = value;
     return (
+    <MyContainer>
       <div className="row my-2 text-capitalize text-center">
         <div className="col-10 mx-auto col-lg-2">
-        	<img src={img} style={{width: "5rem", height: "5rem"}}
+        <NavLink to = "/Details">
+        	<img src={img}  style={{width: "5rem", height: "5rem"}}
         	className="img-fluid" alt="member" />
+        	</NavLink>
         </div>
         <div className="col-10 mx-auto col-lg-2">
         	<span className="d-lg-none">member : </span>
         	{name}
         </div>
         <div className="col-10 mx-auto col-lg-2">
-        	<span className="d-lg-none">menteepower : </span>
+        	<span className="d-lg-none">profession : </span>
+        	{profession}
+        </div>
+        <div className="col-10 mx-auto col-lg-2">
+         <div className="chat-icon" onClick={()=> chatUser(id)}>
+         <i class="far fa-comments"></i>
+         </div>
+      </div>
+        <div className="col-10 mx-auto col-lg-2">
+        	<span className="d-lg-none">MNT : </span>
         	{menteepower}
         </div>
         
       	<div className="col-10 mx-auto col-lg-2">
          <div className="cart-icon" onClick={()=> removeUser(id)}>
          <i className="fas fa-trash"></i>
-      </div>
-      </div>
+         </div>
+         </div>
+         
+      
      </div>
+     </MyContainer>
     );
   }
 
  
 export default NetworkUser
+
+const MyContainer = styled.div`
+img{border-radius:50%}`

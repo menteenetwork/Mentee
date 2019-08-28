@@ -4,21 +4,22 @@ import styled from "styled-components";
 export const ButtonContainer = styled.button`
 text-transform: capitalize;
 font-size: 1.4rem;
-bacground: transparent;
-border: 0.05rem solid var(--mainGreen);
-color: ${prop => prop.MyNetworkMentees ? "var(--mainGreen)" : "var(--mainGreen)"};
-border-radius:0.8rem;
+background: transparent;
+border: 0.05rem solid var(--lightGreen);
+color: ${prop => prop.MyNetworkMentees ? "var(--lightGreen)" : "var(--darkGreen)"};
+border-radius:1rem;
 cursor: pointer;
 margin: 0.2rem 0.5rem 0.2rem 0;
 transition: all 0.5s ease-in-out;
 font-size: 16px;
 
 &:hover {
-	bacground: ${prop => prop.MyNetworkMentees ? "var(--mainGreen)" : "var(--mainGreen)"};
+	background: ${prop => prop.MyNetworkMentees ? "var(--lightGreen)" : "var(--darkGreen)"};
 	color: var(--mainWhite);
 }
 &:focus {
 	outline:none;
 }
+
 `;
 

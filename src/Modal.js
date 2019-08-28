@@ -25,9 +25,9 @@ function Modal () {
 					className="col-8 mx-auto col-md-6 col-lg-8 
 					text-center">
 						<h4 className="text-muted">{name}</h4>
-						<h5>was added to your network</h5>
-						<img src={img} className="img-fluid"
-						alt="member" />
+						<p>was added to your network</p>
+						<img src={img} className="img"
+						alt="member" width="100" height="100"/>
 						<h5>{title}</h5>
 						
 						<NavLink to="/Members">
@@ -56,13 +56,17 @@ function Modal () {
 export default Modal
 
 const ModalContainer = styled.div`
-position:fixed;
-top:0;
-left:0;
-right:0;
-bottom:0;
-background:rgba(0,0,0,0.3);
-display:flex;
-align-items:center;
-#modal{
-	background: var(--mainWhite);`
+
+  	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	/* bring your own prefixes */
+  	transform: translate(-50%, -50%);
+	border-radius: 1rem;
+	background:var(--mainWhite);
+	display:flex;
+	align-items:center;
+	box-shadow:2px 2px 5px 0px rgba(1,0,0,0.2);
+	img{border-radius:50%}
+	
+	`
