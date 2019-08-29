@@ -33,7 +33,7 @@ import MyNetworkMentors from "./MyNetworkMentors"
 import CVCourses from "./CVCourses" 
 import Details from "./Details"
 import Modal from "./Modal"
-
+import AllGroups from "./AllGroups"
 
 
 function Main () {
@@ -78,7 +78,7 @@ return (
             <Route path="/mynetworkmentors" component={MyNetworkMentors}/>
             <Route path="/cvcourses" component={CVCourses}/>
             <Route path="/details" component={Details}/>
-            
+            <Route exact path="/allgroups" component={AllGroups}/>
             
         	
         	<div className="Main">
