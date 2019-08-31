@@ -11,10 +11,10 @@ const GroupContext = React.createContext ();
 class GroupProvider extends Component {
 	state ={
 	groups: [],
-	Groups: [],
+	MyNetworkGroups: [],
 	GroupDetail:[],
 	modalOpen:false,
-	modalMember:[],
+	modalGroup:[],
 	
     
 	};
@@ -58,7 +58,7 @@ addGroup = id =>{
 	group.count = 1;
 	
 this.setState(()=>{
-return {groups: tempGroups, Groups:[...this.state.Groups, group]}
+return {groups: tempGroups, MyNetworkGroups:[...this.state.MyNetworkGroups, group]}
 },
 () => {console.log(this.state);}
 );	
@@ -67,7 +67,7 @@ return {groups: tempGroups, Groups:[...this.state.Groups, group]}
 openModal = id =>{
 	const group = this.getUser(id);
 	this.setState(()=>{
-	return{modalMember: group, modalOpen: true}
+	return{modalGroup: group, modalOpen: true}
 	})
 	}
 
@@ -80,7 +80,7 @@ this.setState(()=>{
 
 removeUser = (id) =>{
 	let tempGroups = [...this.state.groups];
-	let tempNetwork = [...this.state.Groups];
+	let tempNetwork = [...this.state.MyNetworkGroups];
 	
 tempNetwork = tempNetwork.filter(user => user.id !== id);
 
@@ -91,7 +91,7 @@ tempNetwork = tempNetwork.filter(user => user.id !== id);
 
 this.setState(()=>{
 	return{
-		Groups:[...tempNetwork],
+		MyNetworkGroups:[...tempNetwork],
 		groups:[...tempGroups]
 	
 }

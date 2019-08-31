@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components';
-import {GroupConsumer} from "./Context"
+import {GroupConsumer} from "./GroupContext"
 import GroupsList from "./GroupsList"
 import {
 NavLink,

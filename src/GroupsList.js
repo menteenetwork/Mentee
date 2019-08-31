@@ -1,14 +1,14 @@
 import React from "react"
-import NetworkUser from "./NetworkUser"
+import GroupUser from "./GroupUser"
  
 function GroupsList ({value}) 
 {
-const{Groups} = value;
+const{MyNetworkGroups} = value;
 
     return (
       <div className="container-fluid">
-      	{Groups.map(user=>{
-      	return <NetworkUser key={user.id} user={user} 
+      	{MyNetworkGroups.map(user=>{
+      	return <GroupUser key={user.id} user={user} 
       	value={value}/>
       	})}
         

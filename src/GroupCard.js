@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 export default class GroupCard extends Component {
 render () {
 
-const {id, name, img, menteepower, profession, location, about, inNetwork} = this.props.group;
+const {id, name, img, category, subcategory, about, inNetwork} = this.props.group;
     return (
   
     <GroupWrapper className="col-9  col-md-5 col-lg-6 my-4">
@@ -51,7 +51,7 @@ const {id, name, img, menteepower, profession, location, about, inNetwork} = thi
      
       {/* card footer */}
       <div className="card-footer d-flex justify-content-between">
-      	<NavLink to = "/Details">
+      	<NavLink to = "/GroupDetails">
         		<img src = {img} width="90" height="90" alt = "group" 
         		className= "card-images-to s"/>
       		</NavLink>
@@ -61,13 +61,13 @@ const {id, name, img, menteepower, profession, location, about, inNetwork} = thi
       			</h3>
       			<div className="card-flex justify-content-between">
       				<p className="align-self-left mb-10">
-      				{profession}
+      				{category}
       			</p>
       			</div>
       		</div>
       <p className=" font-italic mb-1">
       	<span className="mr-1"></span>
-      	{location}
+      	{subcategory}
       	</p>
       	</div>
       	

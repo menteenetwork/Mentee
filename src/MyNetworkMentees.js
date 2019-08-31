@@ -14,7 +14,7 @@ function MyNetworkMentees () {
          
          	<div class="btn-group button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
          	<div class="btn-group button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
-         	<div class="btn-group button"><NavLink to="/allgroups">MY GROUPS</NavLink></div>
+         	<div class="btn-group button"><NavLink to="/mynetworkgroups">MY GROUPS</NavLink></div>
         
         
         {/* Here should appear a search field for mentees */}

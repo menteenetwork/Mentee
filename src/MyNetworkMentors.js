@@ -17,7 +17,7 @@ function MyNetworkMentors () {
          
          <div class="btn-group button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
          <div class="btn-group button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
-         <div class="btn-group button"><NavLink to="/groups">MY GROUPS</NavLink></div>
+         <div class="btn-group button"><NavLink to="/mynetworkgroups">MY GROUPS</NavLink></div>
         	
         	<TabContainer>
         	<div className="searchBar">

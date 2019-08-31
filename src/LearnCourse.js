@@ -14,7 +14,7 @@ return(
  		<p>Title</p>
  		
  		<div class="button"><NavLink to="/members">SEARCH A MENTOR</NavLink></div>
- 		<div class="button"><NavLink to="/groups">SEARCH A GROUP</NavLink></div>
+ 		<div class="button"><NavLink to="/allgroups">SEARCH A GROUP</NavLink></div>
   	</div>
   )
 }

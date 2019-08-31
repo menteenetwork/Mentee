@@ -29,10 +29,13 @@ import GroupChannel from "./GroupChannel"
 import CreateGroup from "./CreateGroup"
 import ChatHistory from "./ChatHistory"
 import MyNetworkMentees from "./MyNetworkMentees"
-import MyNetworkMentors from "./MyNetworkMentors" 
+import MyNetworkMentors from "./MyNetworkMentors"
+import MyNetworkGroups from "./MyNetworkGroups"  
 import CVCourses from "./CVCourses" 
 import Details from "./Details"
+import GroupDetails from "./GroupDetails"
 import Modal from "./Modal"
+import GroupModal from "./GroupModal"
 import AllGroups from "./AllGroups"
 
 
@@ -76,8 +79,10 @@ return (
             <Route path="/chathistory" component={ChatHistory}/>
             <Route path="/mynetworkmentees" component={MyNetworkMentees}/>
             <Route path="/mynetworkmentors" component={MyNetworkMentors}/>
+            <Route path="/mynetworkgroups" component={MyNetworkGroups}/>
             <Route path="/cvcourses" component={CVCourses}/>
             <Route path="/details" component={Details}/>
+            <Route path="/groupdetails" component={GroupDetails}/>
             <Route exact path="/allgroups" component={AllGroups}/>
             
         	
