@@ -1,7 +1,7 @@
 import React, {Component}  from "react"
 import styled from "styled-components";
 import {GroupConsumer} from "./GroupContext";
-import {NavLink,} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import PropTypes from 'prop-types';
 
 
@@ -11,9 +11,13 @@ render () {
 
 const {id, name, img, category, subcategory, about, inNetwork} = this.props.group;
     return (
-  
-    <GroupWrapper className="col-9  col-md-5 col-lg-6 my-4">
-        <div className = "card">
+ 
+		
+			
+    <GroupWrapper className="col-10  mx-auto col-md-3 col-lg-4 my-3">
+        <div className = "card" >
+        <img src = {img} width="90" height="90" alt = "group" 
+        		className= "card-images-to s"/>
         <GroupConsumer>
         {value=>(
         	<div className = "images-container p-2 " 
@@ -35,10 +39,11 @@ const {id, name, img, category, subcategory, about, inNetwork} = this.props.grou
 						}}
       			>
       		{inNetwork?(
+      		<NavLink to = "/mynetworkgroups">
       			<p className="text-capitalize mb-0" disabled>
       			{" "}
       			in my Network
-      			</p>
+      			</p></NavLink>
       			):(
       			<i className="fas fa-plus" />
 						)}
@@ -50,11 +55,12 @@ const {id, name, img, category, subcategory, about, inNetwork} = this.props.grou
       	
      
       {/* card footer */}
+      <NavLink to = "/GroupDetails">
+      
       <div className="card-footer d-flex justify-content-between">
-      	<NavLink to = "/GroupDetails">
-        		<img src = {img} width="90" height="90" alt = "group" 
-        		className= "card-images-to s"/>
-      		</NavLink>
+      	
+        		
+      		
       		<div>
       			<h3 className="align-self-left mb-0">
       				{name}
@@ -62,15 +68,18 @@ const {id, name, img, category, subcategory, about, inNetwork} = this.props.grou
       			<div className="card-flex justify-content-between">
       				<p className="align-self-left mb-10">
       				{category}
+      				<p className=" font-italic mb-1">
+      				{subcategory}</p>
       			</p>
-      			</div>
+      			
       		</div>
-      <p className=" font-italic mb-1">
-      	<span className="mr-1"></span>
-      	{subcategory}
-      	</p>
+      			
+      				
+      			
+      		</div>
+      
       	</div>
-      	
+      	</NavLink>
       </div>
     </GroupWrapper>
    
@@ -139,7 +148,8 @@ const GroupWrapper = styled.div`
 	transform:translate(100%,100%);
 	transition:all 0.5s linear;
 }
-.images-container:hover .add-btn {
+.images-container:hover 
+	.add-btn {
 	transform: translate(0,0);
 	
 }

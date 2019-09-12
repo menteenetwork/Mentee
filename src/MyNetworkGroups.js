@@ -10,13 +10,16 @@ import styled from 'styled-components';
 
 function MyNetworkGroups () {
     return (
-      <div>
+      <div class="page-body">
+      <div class="body-section">
+		<StyledWrapper>
+			
          
          	<div class="btn-group button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
          	<div class="btn-group button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
          	<div class="btn-group button"><NavLink to="/mynetworkgroups">MY GROUPS</NavLink></div>
         	
-        	<TabContainer>
+        	
         		<div className="searchBar">
         {/* Here should appear a search field for mentees */}
           			<form>
@@ -26,7 +29,7 @@ function MyNetworkGroups () {
           			</form>
         	
      	 		</div>
-        	</TabContainer>
+        	
  			
        
         	
@@ -47,12 +50,32 @@ function MyNetworkGroups () {
          	}
          	}}
          </GroupConsumer>
+ 		</StyledWrapper>
  		</div>
+	</div>
+ 		
     )
   }
 
  
 export default MyNetworkGroups
 
+const StyledWrapper = styled.div`
 
-const TabContainer = styled.div``
+.font-s{
+ a{
+	color:black;
+	text-decoration:none;
+}}
+
+.font-s{
+a:hover{
+	color:var(--darkGreen);
+	text-decoration:none;
+
+}
+a.active {
+	color:var(--darkGreen);
+	text-decoration:none;
+}
+`

@@ -4,62 +4,198 @@ import {
   NavLink,  
  } 
  from "react-router-dom";
- 
+ import Pulse from 'react-reveal/Pulse';
+ import Reveal from 'react-reveal/Reveal';
+ import HomeCards from "../HomeCards"
+
 function Home () {
+
+const heading = {
+	fontSize: '92px',
+	color: 'white',
+	fontFamily: 'Anton',
+	margin: 20,
+}
     return (
+    
       <div>
-      <i class="fas fa-home"></i>
-        <React.Fragment>
-         			<Title title="BE THE CHANGE 
-         			YOU WANT TO SEE 
-         			IN THE WORLD"/>
-		</React.Fragment>
-		<h3>Discover the potential of knowledge and experience sharing.
-Join the community of people whose main objective is helping others 
-in disclosing their potential driving to personal success </h3>
-        
-        <p>WHY YOU SHOULD BECOME A MENTEE</p>
-        <li><i class="fas fa-users"></i><NavLink to="/members">Find mentors</NavLink></li>
-        <li><i class="fas fa-tools"></i><NavLink to="/DesignCourse">Perform tasks</NavLink></li>
-        <li><i class="fas fa-search"></i><NavLink to="/members">Be discovered</NavLink></li>
-        <li><i class="far fa-address-card"></i><NavLink to="/details">Forge your CV</NavLink></li>
-        
-        <h4>Access the power of mentors</h4>
-		<p>Learn, gain new skills, record them on the blockchain, and prove others what you really know doing</p>
-		
-		<p>WHY YOU SHOULD BECOME A MENTOR</p>
-		<ul>
-		
-			<li>Gain satisfaction from helping others</li>
-			<li>Give people access to your knowledge and experience</li>
-			<li>Help others becoming better humans and achieving their personal goals</li>
-			<li>Be rewarded with their gratitude and Mentorpower</li>
-		</ul>
-		<h4>If you are an employer</h4>
-		<p>The personal development of people is the key to the success of every organisation.
-
-Become a mentor so you can shape mentees into future employees you will want to incorporate into your business. Choose those who perform best and better meet the needs of your business. 
-
-Search easily mentees with the set of skills you want</p>
-<p>HOW DOES IT WORK</p>
-<p>Mentee is a platform built on the EOS blockchain. Create an EOS account, get Scatter extension and login. Your MNT tokens will give you access to the mentorship while the EOS account will let you doing the crowdfunding without anyone asking any fees from the donations you receive.</p>
-      <ul>
-      <li>Create EOS account</li>
-      <li>Get Scatter</li>
-      <li>Get MNT tokens</li>
-      <li>Stake your tokens</li>
-      <li>Find mentors</li>
-      <li>Start mentorship</li>
-      <li>Get votes and rewards</li>
-      <li>Forge your blockchains CV</li>
-      <li>Show emplyers your real skills</li>
-      </ul>
-      <p>Have a question? Join us on Telegram</p>
-      <p>Telegram icon <a href="https://t.me/menteenetwork">here</a></p>
+  
       
+      <Pulse>
+      <Reveal effect="fadeInDown">
+      <React.Fragment>  
+         <div class="media">
+         
+       	<h1 style={heading}>BE THE CHANGE<div>
+         			YOU WANT TO SEE <div>
+         			IN THE WORLD
+         			</div>
+         			</div>
+         			</h1></div>
+
+         	
+  		 		
+   		
+   		<div class="media-body">
+  			<img src={"../../assets/images/ikar-boy.png"} class="img-fluid"  class="ml-3" style={{width: "43rem", height: "43rem"}} alt="Ikar">
+			</img>
+		
+		</div>
+		</React.Fragment>
+		</Reveal>
+		</Pulse>
+		
+		<div class="section">
+		<div></div>
+		<div></div>
+		<Reveal effect="fadeInUp">
+		<div className="font-s">
+		
+		<h3>Discover the potential of knowledge and experience sharing.
+		<div>
+		Join the community of people whose main objective is helping others
+		<div> 
+		in disclosing their potential driving to personal success </div></div></h3>
+		</div>
+		<div>
+		</div>
+		</Reveal>
+        </div>
+<div className="main-img">
+<section>
+   
+   </section>
+   </div>
+        
+<div className="body">   
+ <div></div>     
+        <div class="section">
+		<Reveal effect="fadeInUp">
+		<div className="font-s">
+			<div className="container py-5">
+      			<div className="row">
+      				<div className="col-10 mx-auto text-center text-slanted text-black my-5">
+      					<h2><strong>Access the power of mentors</strong></h2>
+						<p>Learn, gain new skills, record them on the blockchain, and prove others what you really know doing</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</Reveal>
+        </div>
+        
+        <section>
+		<Reveal effect="fadeInUp">
+		<div className="font-s">
+			<div className="container py-5">
+      			<div className="row">
+      				<div className="col-10 mx-auto text-center text-slanted text-black my-5">
+      					<h2><strong>WHY YOU SHOULD BECOME A MENTEE</strong></h2>
+      					 
+      					 
+        				
+        			</div>
+				</div>
+			</div>
+			<HomeCards />
+		</div>
+		</Reveal>
+        </section>
+		<div class="section">
+		</div>
+		
+		<div class="section">
+		<Reveal effect="fadeInUp">
+		<div className="font-s">
+			<div className="container py-5">
+      			<div className="row">
+      				<div className="col-10 mx-auto text-center text-slanted text-black my-5">
+      					<h2><strong>WHY YOU SHOULD BECOME A MENTOR</strong></h2>
+		<div className="col-6 mx-auto text-slanted text-black ">
+			Gain satisfaction from helping others<div></div>
+			Give people access to your knowledge and experience<div></div>
+			Help others becoming better humans and achieving their personal goals<div></div>
+			Be rewarded with their gratitude and Mentorpower<div></div>
+		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</Reveal>
+        </div>
+        <div class="section">
+        </div>
+        
+		<div class="section">
+		<Reveal effect="fadeInUp">
+		<div className="font-s">
+			<div className="container py-5">
+      			<div className="row">
+      				<div className="col-5 text-slanted text-black my-5">
+      					<h3><strong>If you are an employer</strong></h3>
+      					
+  			
+		
+      				</div>
+		<p>The personal development of people is the key to the success of every organisation.<div></div>
+		Become a mentor so you can shape mentees into future employees you will want to incorporate into your business.<div></div>
+ 		Choose those who perform best and better meet the needs of your business. 
+		<div></div>
+		Search easily mentees with the set of skills you want</p>
+					</div>
+				</div>
+			</div>
+		
+		</Reveal>
+        </div>
+
+
+
+
+<section>
+		<Reveal effect="fadeInUp">
+		<div className="font-xl">
+			<div className="container py-5">
+      			<div className="row">
+      				<div className="col-10 mx-auto text-center text-slanted text-black my-5">
+      					<h2><strong>HOW DOES IT WORK</strong></h2>
+<div></div><p>Mentee is a platform built on the EOS blockchain. Create an EOS account, get Scatter extension and login. Your MNT tokens will give you access to the mentorship while the EOS account will let you doing the crowdfunding without anyone asking any fees from the donations you receive.</p><div></div>
+      
+      <div>
+      <img src={"../../assets/images/howitworks.png"} class="img-fluid"  class="ml-3"  alt="Ikar"></img>
       </div>
      
+      <div className="font-s">
+			<div className="container py-5">
+      			<div className="row">
+      				<div className="col-10 mx-auto text-center text-slanted text-black my-5">
+      					 <p>Have a question? Join us on Telegram</p>
+     <i class="fab fa-telegram fa-3x"></i>
+      <a href="https://t.me/menteenetwork"></a>
+      </div>
+				</div>
+			</div>
+		</div>
+		 </div>
+				
+			</div>
+		</div></div>
+		
+			
+		</Reveal>
+        </section>
       
+      
+    
+     
+     
+      </div>
+      
+     
+      
+         
+</div>
+
     )
   }
 

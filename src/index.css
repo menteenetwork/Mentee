@@ -5,39 +5,101 @@
 --mainDark: #232528;
 --lightGreen: #11f58f;
 --darkGreen: #1fd97f;
+--hotPink: #FF69B4;
+--violet: #EE82EE;
+--whiteSmoke: #F5F5F5;
 
 }
 
-body {
+
+.main-img{
+	max-width:500px;
+	background-color: #FFFFFF;
+	color:black;
+}	
+.body {
   background-color: #FFFFFF;
-  padding: 1
-  1980px;
-  margin: 10;
+  color:black;
+  padding: 0;
+   margin: 0px;
+
 }
-h1, h2, p, ul, li, h3, h4, h5 {
-  font-family: Roboto;
+
+.page-body {
+  background-color: #FFFFFF;
+  background-size: auto;
+  color:black;
+  display: fixed;
+ 
 }
-ul.header li {
+
+.font-xl{
+	font-family: 'Oswald', sans-serif;
+	font-size: 20;
+  	color:black;
+  	margin:20px;
+	}
+	
+.font-s{
+	font-family: 'Oswald', sans-serif;
+	font-size: 14;
+  	font-weight:100;
+  	margin:20px;
+	}
+
+.logo{
+
+ top: 10px;
+ left:0px;
+  position: fixed;
+  z-index:1;
+}
+
+
+.nav {
+	 padding: 1px;
+    color:white;
+	display: flex;
+	position: fixed;
+	top: 0;
+	left:10%;
+	width:100%;
+	z-index: 1;
+	
+}
+
+.nav a:hover {
+  background-color: black;
+  color: var(--lightGreen);
+}
+
+.nav a.active {
+  color: var(--darkGreen);
+}		
+ul.nav li {
   display: inline;
   list-style-type: none;
   margin: 0;
 }
-ul.header {
-  background-color: #FFF;
-  padding: 0;
-}
-ul.header li a {
+
+ul.nav li a {
   
   font-weight: 200;
   text-decoration: none;
-  padding: 15px;
+  padding: 13px;
   display: inline-block;
+  font-size:14px;
+  color:white;
 }
-.text.title{
-font-family: 'Archivo Black', sans-serif;
-font-family: 'Anton', sans-serif;
-text-transform: uppercase;
+a{
+	color:white;
+	text-decoration:none;
 }
+a:hover{
+	color:black;
+	text-decoration:none;
+}
+
 .text.white{
 	color: var(--mainWhite);
 }
@@ -46,41 +108,37 @@ text-transform: uppercase;
 	}
 	
 .content {
-background: #FFFFFF   ;
-  padding: 20px;
+background: rgba(0,230,142,1);
+background: -moz-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,230,142,1)), color-stop(5%, rgba(0,230,142,1)), color-stop(100%, rgba(0,149,168,1)));
+background: -webkit-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
+background: -o-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
+background: -ms-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
+background: linear-gradient(to right, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e68e', endColorstr='#0095a8', GradientType=1 );
+  padding: 0px;
+  color:white; 
+
+
 }
 
 .content li {
   margin-bottom: 10px;
+  color:black;
 }
 .active {
-  color: white;
+  color: red;
   }
 
 
-.header {
-	
-	border-bottom: solid 1px rgba(17, 17, 17, 0.1);
-	display: flex;
-	justify-content: space between;
-	background: #ffffff;
-	position: fixed;
-	top: 0;
-	left: 1;
-	right: 0;
-	z-index: 1;
-	
-}
-
 .button {
-background: linear-gradient(to right, rgba(103, 251, 162, 0.988), rgba(6, 234, 193, 1));
-
+	background: linear-gradient(to right, rgba(103, 251, 162, 0.988), rgba(6, 234, 193, 1));
 	width: 100%;
-	max-width: 200px;
+	max-width: 250px;
 	height: 48px;
 	border-radius: 50px;
-	
-	border: solid 1px rgba(17, 17, 17, 0.1);
+	box-shadow:2px 2px 5px 0px rgba(1,0,0,0.2);
+	border: solid 0px rgba(17, 17, 17, 0.1);
 	color: white;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 16px;
@@ -89,15 +147,12 @@ background: linear-gradient(to right, rgba(103, 251, 162, 0.988), rgba(6, 234, 1
 	text-align: center;
 	padding: 10px 20px; /* Some padding */
   	cursor: pointer; /* Pointer/hand icon */
-  	float: center;
-  	
-  	
+  	float: center; 	
 }
 
 .button:hover {
-	background-color: #1BB978; 
-		
-  box-shadow:2px 2px 5px 0px rgba(1,0,0,0.2);
+	background-color: #1BB978; 		
+    box-shadow:0px 0px 0px 0px rgba(1,0,0,0.2);
 }
 
 .button:focus {
@@ -130,12 +185,12 @@ background: linear-gradient(to right, rgba(103, 251, 162, 0.988), rgba(6, 234, 1
 width: 40px;
 height: 40px;
 }
+
 .img-respons{
 width: 300px;
 height: 300px;
 }
-.logo{
-}
+
 .chat.field {
 	width: 100%;
 	max-width: 352px;
@@ -175,7 +230,7 @@ height: 300px;
 }
 .img{
 	border-radius: 50%;
-	
+	width:100%;
 }
 .btn-group  {
 
@@ -197,4 +252,85 @@ height: 300px;
   background-color: var(--lightGreen);
   
   
+}
+
+.media{
+
+	
+}
+.media-body{
+	position: absolute;
+	right:0;
+	top:0;
+	size: 300 300;
+	opacity: 0.5;
+	z-index: -1;
+	
+}
+.footer{
+	
+	background-color:black;
+	color: white;
+	bottom:0;
+	width:100%;
+	left:0;
+}
+.nav-container{
+
+left:60%;
+position:fixed;
+}
+
+.section {
+  max-width: 100%;
+  padding: 25px 20px 150px 20px;
+  margin: 30 auto;
+  display: block;
+  
+}
+.body-section{
+	width: 100%;
+	height:auto;
+  padding: 50px 30px 150px 30px;
+  margin: 30 auto;
+  display: block;
+  color:black;
+}
+.heroHeader {
+  height: 72px;
+  max-height: 400px;
+  min-height: 50px;
+  background-color:rgba(0,230,142,1);
+	background: -moz-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,230,142,1)), color-stop(5%, rgba(0,230,142,1)), color-stop(100%, rgba(0,149,168,1)));
+	background: -webkit-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
+	background: -o-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
+	background: -ms-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
+	background: linear-gradient(to right, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e68e', endColorstr='#0095a8', GradientType=1 );
+ 
+  background-size: cover;
+  left: 0;
+  right: 0;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }

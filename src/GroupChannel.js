@@ -1,17 +1,22 @@
 import React from "react"
-import Members from "./Members"
-
-import {
-NavLink,
-Route
-}
- from "react-router-dom";
+import {NavLink,Route} from "react-router-dom";
+import Title from "./Title"
+import styled from "styled-components"; 
   
-function Group (){
-return( 
-	<div> 
-	
- 		<h2>Group name:</h2><h3>Anna's Graphic design classes</h3>
+function GroupChannel ({match}){
+
+return(
+	<div class="page-body">
+		<div class="body-section">
+			<StyledWrapper>
+ 		
+      			<h2>Group name:</h2>
+   <NavLink to={`${match.url}/Anna's Graphic design classes`}>Anna's Graphic design classes</NavLink>
+ 	
+ 		
+ 		<Route path={`${match.path}/:name`} render= {({match}) =>( 
+  	<div> 
+  	<h3> {match.params.name} </h3></div>)}/>
  		<div>
  		{/* Here should appear the webcam boxes and chat messages from https://tox.chat 
  		
@@ -32,12 +37,32 @@ return(
  		<div>
  		<NavLink to="/mynetworkmentees"><img className="img-responsive" src={"../../assets/images/icon-network.png"} alt="my network"/></NavLink>
  		</div>
-  	
-  	
-
+  		</StyledWrapper>
   	</div>
+</div>
+  
   )
 }
 
 
-export default Group
+export default GroupChannel
+
+const StyledWrapper = styled.div`
+
+.font-s{
+ a{
+	color:black;
+	text-decoration:none;
+}}
+
+.font-s{
+a:hover{
+	color:var(--darkGreen);
+	text-decoration:none;
+
+}
+a.active {
+	color:var(--darkGreen);
+	text-decoration:none;
+}
+`

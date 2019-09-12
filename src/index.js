@@ -12,12 +12,14 @@ import {
  from "react-router-dom";
  
 ReactDOM.render(
+
   <MemberProvider>
   <GroupProvider>
   	<HashRouter>
   		<Main/> 
   	</HashRouter>
   	</GroupProvider>
-  </MemberProvider>,
+  </MemberProvider>
+  ,
   document.getElementById("root")
 );

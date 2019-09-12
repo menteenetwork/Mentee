@@ -7,6 +7,11 @@ import styled from 'styled-components';
 
 function CVCourses () {
     return (
+    
+    
+     <div class="page-body">
+    	
+    	
       <MemberConsumer>
       	{value  =>{
       const {id, name, img, about,profession, location, inNetwork}=
@@ -90,7 +95,9 @@ tied to specific courses and actions. Data pulled from bloks.io */}
       
       </MemberConsumer>
       
-       
+      </div>
+      	
+    
  			
     )
   }
@@ -121,4 +128,23 @@ img{
   }
 
 }
+
+
+.font-s{
+ a{
+	color:black;
+	text-decoration:none;
+}}
+
+.font-s{
+a:hover{
+	color:var(--darkGreen);
+	text-decoration:none;
+
+}
+a.active {
+	color:var(--darkGreen);
+	text-decoration:none;
+}
+
 `

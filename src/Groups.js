@@ -2,11 +2,7 @@ import React from "react"
 import styled from 'styled-components';
 import {GroupConsumer} from "./GroupContext"
 import GroupsList from "./GroupsList"
-import {
-NavLink,
-Route
-}
- from "react-router-dom";
+import {NavLink,Route} from "react-router-dom";
 
 
 const Groups = ({ match }) => {
@@ -15,17 +11,17 @@ const Groups = ({ match }) => {
 
     return (
     
-      <div>
-      <nav>
-     
-       </nav>
+      <div class="page-body">
+		<div class="body-section">
+			<StyledWrapper>
+      			
         
         
          <div class="btn-group button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
          <div class="btn-group button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
          <div class="btn-group button"><NavLink to="/groups">MY GROUPS</NavLink></div>
         
-        <TabContainer>
+      <div class="font-s">
         	<div className="searchBar">
         	
           		<form>
@@ -35,7 +31,7 @@ const Groups = ({ match }) => {
           		</form>
         	
      	 	</div>
-        	</TabContainer>
+        	
         	
 {/* Here should appear different groups mentee joined and they should be sorted by course 
 category. For example Math related groups, Engineering related groups etc. */}
@@ -61,47 +57,42 @@ category. For example Math related groups, Engineering related groups etc. */}
     categories and subcategories  */}
     
     <ul><li><NavLink to={`${match.url}/Mathematics/Algebra`}>Algebra</NavLink></li></ul>
-    <li><NavLink to={`${match.url}/ComputerScience`}>Computer Science</NavLink></li>
-    <li><NavLink to={`${match.url}/Engeeniering`}>Engeeniering</NavLink></li>
+    	<li><NavLink to={`${match.url}/ComputerScience`}>Computer Science</NavLink></li>
+    	<li><NavLink to={`${match.url}/Engeeniering`}>Engeeniering</NavLink></li>
 	
   	
   	<Route path={`${match.path}/:name`} render= {({match}) =>( 
-  	<div>
-  	<h3> {match.params.name} </h3>
+  		<div>
+  		<h3> {match.params.name} </h3>
   	
   	{/* Each of the buttons should redirect to a specific course like 
   	for example to Algebra in Mathematics category. Depends on which course 
   	a user has chosen  */}
     
-  	<div class="button"><NavLink to="/learncourse">START LEARNING</NavLink></div>
-  	<div class="button"><NavLink to="/designcourse">DESIGN A COURSE</NavLink></div>
+  			<div class="button"><NavLink to="/learncourse">START LEARNING</NavLink></div>
+  			<div class="button"><NavLink to="/designcourse">DESIGN A COURSE</NavLink></div>
   	
   	{/* If BECOME A MENTOR button clicked then a user is redirected to /members page where 
   	"Mentees you can help with perfecting their skills" will appear on top. 
   	Members are filtered by keyword "Algebra" and "Mathematics" 
   	if we are in course page /mathematics/algebra  */}
   	
-  	<div class="button"><NavLink to="/members">BECOME A MENTOR</NavLink></div>
+  			<div class="button"><NavLink to="/members">BECOME A MENTOR</NavLink></div>
   	
   	
-  	</div>)}/>
+  		</div>)}/>
   	
   
-  )
-      
-      
-      
-      
-      
-      
-      
+  
       
       {/* Here should appear a "create a group" function  */}
       <div class="button"><NavLink to="/creategroup">+ Create a group</NavLink></div>
       
       {/* Here should appear a "search a group" function with the list of groups and a "join" button */}
       
-      
+      			</div>
+     		</StyledWrapper>
+      	</div>
       </div>
       
      
@@ -112,6 +103,25 @@ category. For example Math related groups, Engineering related groups etc. */}
  
 export default Groups
 
-const TabContainer = styled.div``
+const StyledWrapper = styled.div`
+
+
+.font-s{
+ a{
+	color:black;
+	text-decoration:none;
+}}
+
+.font-s{
+a:hover{
+	color:var(--darkGreen);
+	text-decoration:none;
+
+}
+a.active {
+	color:var(--darkGreen);
+	text-decoration:none;
+}
+`
 
 

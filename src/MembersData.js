@@ -39,6 +39,48 @@ export const MembersData = [
 	count: 0,
 	total: 0
 }, 
+{
+
+      id: 4,
+      name: "Dan Goleman",
+      img: "images/member-4.jpg",
+      location: "London",
+      profession: "Music producer",
+      menteepower:"MNT",
+      about: "Lorem ipsum dolor sit amet, nec euismod sit, ut wisi, et sit tortor pede a quis, ligula non consectetuer ut enim. Aliquam fermentum sed nec. Blandit irure eros malesuada molestie libero aliquam, ligula at viverra et lectus pede nec",
+	  inNetwork: false,
+	  count: 0,
+	  total: 0
+	
+},
+{
+
+      id: 5,
+      name: "Nathalie Van Bras",
+      img: "images/member-5.jpeg",
+      location: "Amsterdam",
+      profession: "Spiritual mentor",
+      menteepower:"MNT",
+      about: "Lorem ipsum dolor sit amet, nec euismod sit, ut wisi, et sit tortor pede a quis, ligula non consectetuer ut enim. Aliquam fermentum sed nec. Blandit irure eros malesuada molestie libero aliquam, ligula at viverra et lectus pede nec",
+	  inNetwork: false,
+	  count: 0,
+	  total: 0
+	
+},
+{
+
+      id: 6,
+      name: "Carl Strassburger",
+      img: "images/member-6.jpeg",
+      location: "Lisbon",
+      profession: "Marshmellow CEO",
+      menteepower:"MNT",
+      about: "Lorem ipsum dolor sit amet, nec euismod sit, ut wisi, et sit tortor pede a quis, ligula non consectetuer ut enim. Aliquam fermentum sed nec. Blandit irure eros malesuada molestie libero aliquam, ligula at viverra et lectus pede nec",
+	  inNetwork: false,
+	  count: 0,
+	  total: 0
+	
+},
 ]
 
 

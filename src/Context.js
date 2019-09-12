@@ -83,6 +83,8 @@ removeUser = (id) =>{
 	let tempMembers = [...this.state.members];
 	let tempNetwork = [...this.state.MyNetworkMentees];
 	
+
+	
 tempNetwork = tempNetwork.filter(user => user.id !== id);
 
 	const index = tempMembers.indexOf(this.getUser());
@@ -114,6 +116,7 @@ this.setState(()=>{
       openModal: this.openModal,
       closeModal: this.closeModal,
       removeUser: this.removeUser,
+      
       }}
       >
       

@@ -12,14 +12,16 @@ import styled from 'styled-components';
 
 function MyNetworkMentors () {
     return (
-      <div>
+       <div class="page-body">
+      <div class="body-section">
+		<StyledWrapper>
          
          
          <div class="btn-group button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
          <div class="btn-group button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
          <div class="btn-group button"><NavLink to="/mynetworkgroups">MY GROUPS</NavLink></div>
         	
-        	<TabContainer>
+        	
         	<div className="searchBar">
         	
           		<form>
@@ -29,7 +31,7 @@ function MyNetworkMentors () {
           		</form>
         	
      	 </div>
-        	</TabContainer>
+        	
          
         	<MemberConsumer>
          {value =>{
@@ -50,10 +52,30 @@ function MyNetworkMentors () {
          	
          </MemberConsumer>
         
-      </div>
+     </StyledWrapper>
+ 		</div>
+	</div>
     )
   }
 
  
 export default MyNetworkMentors
-const TabContainer = styled.div``
+const StyledWrapper = styled.div`
+
+.font-s{
+ a{
+	color:black;
+	text-decoration:none;
+}}
+
+.font-s{
+a:hover{
+	color:var(--darkGreen);
+	text-decoration:none;
+
+}
+a.active {
+	color:var(--darkGreen);
+	text-decoration:none;
+}
+`

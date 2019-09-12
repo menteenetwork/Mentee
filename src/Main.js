@@ -17,7 +17,7 @@ import Mission from "./components/Mission"
 import Blog from "./components/Blog"
 import Whitepaper from "./components/Whitepaper"
 import Footer from "./components/Footer"
-import Header from "./components/Header"
+
 import Index from "./index.css"
 import Members from "./Members"
 import NotFoundPage from "./NotFoundPage"
@@ -37,18 +37,23 @@ import GroupDetails from "./GroupDetails"
 import Modal from "./Modal"
 import GroupModal from "./GroupModal"
 import AllGroups from "./AllGroups"
-
+import Title from "./Title"
+import Navbar from"./Navbar"
 
 function Main () {
 return ( 
     
     <HashRouter>
-    <Header />
+    
  	<Switch>
  	
-   
+ 
     <div>  
-    	<ul className="header">
+    <div className="heroHeader">
+    	<ul className="nav">
+    	<div class="nav-container">
+    	
+    	<Navbar />
             <li><NavLink exact to="/">home</NavLink></li>
             <li><NavLink to="/contact">contact</NavLink></li>
             <li><NavLink to="/courses">courses</NavLink></li>
@@ -56,8 +61,10 @@ return (
             <li><NavLink to="/whitepaper">whitepaper</NavLink></li>
             <li><NavLink to="/blog">blog</NavLink></li>
             <li><NavLink to="/details">login</NavLink></li> 
+         </div>
+         
          </ul>
-    
+   </div>
 
           <div className="content">
             <Route exact path="/" component={Home}/>
@@ -85,6 +92,7 @@ return (
             <Route path="/groupdetails" component={GroupDetails}/>
             <Route exact path="/allgroups" component={AllGroups}/>
             
+            
         	
         	<div className="Main">
         	
@@ -95,6 +103,7 @@ return (
     	
         
         <Footer />
+        <GroupModal />
         <Modal />
         </div>
        

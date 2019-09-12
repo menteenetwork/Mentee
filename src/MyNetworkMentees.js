@@ -10,7 +10,9 @@ import styled from 'styled-components';
 
 function MyNetworkMentees () {
     return (
-      <div>
+      <div class="page-body">
+      <div class="body-section">
+		<StyledWrapper>
          
          	<div class="btn-group button"><NavLink to="/mynetworkmentees">MY MENTEES</NavLink></div>
          	<div class="btn-group button"><NavLink to="/mynetworkmentors">MY MENTORS</NavLink></div>
@@ -19,7 +21,7 @@ function MyNetworkMentees () {
         
         {/* Here should appear a search field for mentees */}
  			
-        <TabContainer>
+        
         	<div className="searchBar">
         	
           		<form>
@@ -29,7 +31,7 @@ function MyNetworkMentees () {
           		</form>
         	
      	 	</div>
-        </TabContainer>
+       
         	
  		<MemberConsumer>
          
@@ -48,7 +50,9 @@ function MyNetworkMentees () {
          	}
          	}}
          </MemberConsumer>
+ 		</StyledWrapper>
  		</div>
+	</div>
     )
   }
 
@@ -56,4 +60,22 @@ function MyNetworkMentees () {
 export default MyNetworkMentees
 
 
-const TabContainer = styled.div``
+const StyledWrapper = styled.div`
+
+.font-s{
+ a{
+	color:black;
+	text-decoration:none;
+}}
+
+.font-s{
+a:hover{
+	color:var(--darkGreen);
+	text-decoration:none;
+
+}
+a.active {
+	color:var(--darkGreen);
+	text-decoration:none;
+}
+`

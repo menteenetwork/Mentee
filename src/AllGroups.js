@@ -14,11 +14,13 @@ export default class AllGroups extends Component {
 	
     return (
     
-    
-      <div>
-       <React.Fragment>
+    <StyleWrapper>
+    <div class="page-body">
+    <div class="font-s">
+      
+       
       		<Title  title="groups"/>
-      		<TabContainer>
+      		
         		<div className="searchBar">
         	
         	
@@ -31,20 +33,51 @@ export default class AllGroups extends Component {
         	{/* Here should appear a "create a group" function  */}
       <div class="button"><NavLink to="/creategroup">+ Create a group</NavLink></div>
      	 		</div>
-        	</TabContainer>
+        	
       		
+      		<div className="py-5">
+       		<div className="container">
+      		<Title  title="members"/>
+      		<div className="row">
       		
       			<GroupConsumer>
+      			
       			{value => {
       			return value.groups.map(group => {
       				return <GroupCard  key={group.id} group={group}/>;
       			});
       			}}
+      			
       			</GroupConsumer>
-      	</React.Fragment>
+      			</div>
+      			</div>
+      			</div>
+      	
       </div>
+      </div>
+    </StyleWrapper>
     );
     
   }
   }
-const TabContainer = styled.div``
+const StyleWrapper = styled.div`
+
+.font-s{
+color:black;
+ a{
+	color:black;
+	text-decoration:none;
+}}
+
+.font-s{
+a:hover{
+	color:var(--darkGreen);
+	text-decoration:none;
+
+}
+a.active {
+	color:var(--darkGreen);
+	text-decoration:none;
+}
+
+`

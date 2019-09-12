@@ -7,6 +7,10 @@ import styled from 'styled-components';
 
 function Details () {
     return (
+    
+    <MyContainer>
+    <div class="page-body">
+	<div class="font-s">
       <MemberConsumer>
       	{value  =>{
       const {id, name, img, about,profession,menteepower, location, inNetwork}=
@@ -64,10 +68,10 @@ function Details () {
 					</ButtonContainer>
        			
       
-      <div class="container">
-    
+      
+    <div class="section"></div>
       	<h2>Account activity timeline</h2>  
-      		
+      	
 {/* Here should appear a timeline including Menteepower, Mentorpower transactions 
       	 in different time intervals: 7 dyas, 1 month, 3 months, 6 months, 1 year */}
       	 
@@ -77,10 +81,11 @@ function Details () {
          		<div class="btn-group button"><NavLink to="/Details">OVERVIEW</NavLink></div>
         		 <div class="btn-group button"><NavLink to="/CVCourses">COURSES</NavLink></div>
         	</MyContainer>
- 		<div> 
+ 		
  		  
  {/* Here should appear a dropdown list for each category with relevant info		
  			*/}
+ 			
         	<ul>
         	<li><p>Experience</p></li>
         	<li><p>Skills</p></li>
@@ -89,10 +94,11 @@ function Details () {
  			
 {/* This image will be interactive and will reflect all data contained in Mentee's account */}
  			
-        		<img className="img-respons" src={"../../assets/images/blockchain cv.png"} alt="blockchain cv"/>
-      		</div>
- 		</div> 		
- 	</div>
+        		<img class="img-respons" src={"../../assets/images/blockchain cv.png"} alt="blockchain cv"/>
+        		
+      		
+ 				
+ </div>
  			</span>
        	</div>
     </div>
@@ -100,6 +106,10 @@ function Details () {
       }}
       
       </MemberConsumer>
+      </div>
+      </div>
+      </MyContainer>
+      
     )
   }
 
@@ -120,5 +130,21 @@ img{
   color: white;
   
   }
+}
+.font-s{
+ a{
+	color:black;
+	text-decoration:none;
+}}
+
+.font-s{
+a:hover{
+	color:var(--darkGreen);
+	text-decoration:none;
+
+}
+a.active {
+	color:var(--darkGreen);
+	text-decoration:none;
 }
 `

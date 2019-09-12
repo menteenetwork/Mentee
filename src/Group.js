@@ -1,13 +1,13 @@
 import React from "react"
 import Members from "./Members"
-import {
-NavLink,
-}
- from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import styled from "styled-components"; 
   
 function Group (){
 return( 
-	<div> 
+	<div class="page-body">
+		<div class="body-section">
+			<StyledWrapper>
  		<h2>Anna's Graphic design classes</h2>
  		
  		<p>Anna's graphic design courses can prepare you for a wide range of careers, from video game design to marketing. 
@@ -22,10 +22,32 @@ return(
  		<div class="button"><NavLink to="/groupchannel">ACCESS</NavLink></div>
  		
  		
- 		<Members />
-  	</div>
+ 				<Members />
+  			</StyledWrapper>
+      	</div>
+     </div>
   )
 }
 
 
 export default Group
+
+const StyledWrapper = styled.div`
+
+.font-s{
+ a{
+	color:black;
+	text-decoration:none;
+}}
+
+.font-s{
+a:hover{
+	color:var(--darkGreen);
+	text-decoration:none;
+
+}
+a.active {
+	color:var(--darkGreen);
+	text-decoration:none;
+}
+`

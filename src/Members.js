@@ -12,12 +12,11 @@ export default class Members extends Component {
 	render() {
 	
     return (
-    
+    <div className="page-body"> 
     
       <div>
        <React.Fragment>
-      		<Title  title="members"/>
-      		<TabContainer>
+       <div className="section">
         		<div className="searchBar">
         	
           			<form>
@@ -27,7 +26,12 @@ export default class Members extends Component {
           			</form>
         	
      	 		</div>
-        	</TabContainer>
+        	</div>
+       	<div className="py-5">
+       		<div className="container">
+      		<Title  title="members"/>
+      		<div className="row">
+      		
       		
       		
       			<MemberConsumer>
@@ -37,8 +41,12 @@ export default class Members extends Component {
       			});
       			}}
       			</MemberConsumer>
+      		</div>
+      		</div>
+      		</div>
+      		
       	</React.Fragment>
-      </div>
+      </div></div>
     );
     
   }
