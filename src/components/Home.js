@@ -7,6 +7,7 @@ import {
  import Pulse from 'react-reveal/Pulse';
  import Reveal from 'react-reveal/Reveal';
  import HomeCards from "../HomeCards"
+ import EOSIOClient from "../Eosio-client";
 
 function Home () {
 
@@ -19,7 +20,9 @@ const heading = {
     return (
     
       <div>
-  
+      
+  this.eosio = new EOSIOClient(“Mentee”);
+      console.log("Scatter is integrated");
       
       <Pulse>
       <Reveal effect="fadeInDown">

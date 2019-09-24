@@ -12,7 +12,7 @@ export default class Members extends Component {
 	render() {
 	
     return (
-    <div className="page-body"> 
+  
     
       <div>
        <React.Fragment>
@@ -46,7 +46,7 @@ export default class Members extends Component {
       		</div>
       		
       	</React.Fragment>
-      </div></div>
+      </div>
     );
     
   }
