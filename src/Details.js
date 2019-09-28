@@ -8,6 +8,12 @@ import styled from 'styled-components';
 function Details () {
     return (
     
+    
+    
+    
+    
+    
+    
     <MyContainer>
     <div class="page-body">
 	<div class="font-s">

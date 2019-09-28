@@ -6,8 +6,7 @@ import {
  from "react-router-dom";
  import Pulse from 'react-reveal/Pulse';
  import Reveal from 'react-reveal/Reveal';
- import HomeCards from "../HomeCards"
- import EOSIOClient from "../Eosio-client";
+ import HomeCards from "../HomeCards";
 
 function Home () {
 
@@ -15,14 +14,12 @@ const heading = {
 	fontSize: '92px',
 	color: 'white',
 	fontFamily: 'Anton',
-	margin: 20,
+	margin: 40,
 }
     return (
     
       <div>
-      
-  this.eosio = new EOSIOClient(“Mentee”);
-      console.log("Scatter is integrated");
+  
       
       <Pulse>
       <Reveal effect="fadeInDown">
@@ -87,7 +84,7 @@ const heading = {
 		</Reveal>
         </div>
         
-        <section>
+         <div class="section">
 		<Reveal effect="fadeInUp">
 		<div className="font-s">
 			<div className="container py-5">
@@ -103,9 +100,10 @@ const heading = {
 			<HomeCards />
 		</div>
 		</Reveal>
-        </section>
-		<div class="section">
-		</div>
+        </div>
+        
+        
+		
 		
 		<div class="section">
 		<Reveal effect="fadeInUp">
@@ -114,12 +112,12 @@ const heading = {
       			<div className="row">
       				<div className="col-10 mx-auto text-center text-slanted text-black my-5">
       					<h2><strong>WHY YOU SHOULD BECOME A MENTOR</strong></h2>
-		<div className="col-6 mx-auto text-slanted text-black ">
+		
 			Gain satisfaction from helping others<div></div>
 			Give people access to your knowledge and experience<div></div>
 			Help others becoming better humans and achieving their personal goals<div></div>
 			Be rewarded with their gratitude and Mentorpower<div></div>
-		</div>
+	
 					</div>
 				</div>
 			</div>
@@ -165,7 +163,7 @@ const heading = {
 <div></div><p>Mentee is a platform built on the EOS blockchain. Create an EOS account, get Scatter extension and login. Your MNT tokens will give you access to the mentorship while the EOS account will let you doing the crowdfunding without anyone asking any fees from the donations you receive.</p><div></div>
       
       <div>
-      <img src={"../../assets/images/howitworks.png"} class="img-fluid"  class="ml-3"  alt="Ikar"></img>
+      <img src={"../../assets/images/howitworks.png"} class="img-fluid"  class="ml-2"  alt="Ikar"></img>
       </div>
      
       <div className="font-s">
