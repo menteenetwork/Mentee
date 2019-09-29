@@ -4,16 +4,35 @@ import {NavLink} from "react-router-dom";
 import {ButtonContainer} from "./Button"
 import Title from "./Title"
 import styled from 'styled-components';
+import EOSIOClient from './EOSIOClient'
+
+const sleep = (milliseconds) => {
+	return new Promise(resolve => setTimeout(resolve, milliseconds))
+  }
+
 
 function Details () {
+	
+	var eosio = new EOSIOClient("mentee-react");
+	try{  
+  
+		sleep(500).then(() => {
+	   console.log("you clicked")
+	   //this.eosio.login()
+	   eosio.login();
+	   
+		})
+   
+	   }
+	   catch(err)
+	   {
+		 console.log(err)
+		 alert("Unable to find scatter 1")
+	   }
+	
     return (
     
-    
-    
-    
-    
-    
-    
+
     <MyContainer>
     <div class="page-body">
 	<div class="font-s">
