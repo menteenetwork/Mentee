@@ -1,13 +1,41 @@
-import React from "react"
+import React, {Component} from "react"
 import {NavLink} from "react-router-dom";
 import styled from 'styled-components';
 
-function Navbar () {
+import Item from './Item'
+import Lead from './Lead'
+
+
+
+class Navbar extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            menu_class: '',
+        }
+    }
+
+    setToggleTopMenuClass = () => {
+        if (this.state.menu_class === '') {
+            this.setState({
+                menu_class: 'toggled',
+            })
+        } else {
+            this.setState({
+                menu_class: '',
+            })
+        }
+    }
+
+
+    render = () => {
+let top_menu_class = `top-menu ${this.state.menu_class}`
     return (
-      <StyledWrapper>
-      <div className="nav-container">
-      	<div clasName="nav">
-      </div>
+    
+       <div>
+       <StyledWrapper>
+      
         		<div className="logo">
         			
        					 <NavLink to="/">
@@ -16,11 +44,27 @@ function Navbar () {
 						</NavLink>
 					
        			 </div>
-        	</div>
+        	
       </StyledWrapper>
+                <div className={top_menu_class} >
+                    <div className='right'>
+                    	<li><NavLink to="/details">login</NavLink></li>
+                        <li><NavLink exact to="/">home</NavLink></li>
+            			<li><NavLink to="/contact">contact</NavLink></li>
+            			<li><NavLink to="/courses">courses</NavLink></li>
+            			<li><NavLink to="/mission">mission</NavLink></li>
+           				 <li><NavLink to="/whitepaper">whitepaper</NavLink></li>
+            			<li><NavLink to="/blog">blog</NavLink></li>
+             
+                    </div>
+                    <i class="fa fa-bars fa-2x" aria-hidden="true" onClick={this.setToggleTopMenuClass}></i>
+                    <div className='clear-fix' />
+                </div>
+            </div>
+      
     )
   }
-
+}
  
 export default Navbar
 const StyledWrapper = styled.div`

@@ -51,17 +51,11 @@ return (
     <div>  
     <div className="heroHeader">
     	<ul className="nav">
-    	<div class="nav-container">
+    	
     	
     	<Navbar />
-            <li><NavLink exact to="/">home</NavLink></li>
-            <li><NavLink to="/contact">contact</NavLink></li>
-            <li><NavLink to="/courses">courses</NavLink></li>
-            <li><NavLink to="/mission">mission</NavLink></li>
-            <li><NavLink to="/whitepaper">whitepaper</NavLink></li>
-            <li><NavLink to="/blog">blog</NavLink></li>
-            <li><NavLink to="/details">login</NavLink></li> 
-         </div>
+    	
+        
          
          </ul>
    </div>
