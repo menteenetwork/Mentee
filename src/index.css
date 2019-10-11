@@ -70,7 +70,7 @@ font-family: 'Oswald', sans-serif;
      color:white;
 	 display: flex;
 	 position: fixed;
-	 top: 0;
+	 top: 0px;
 	 left:10%;
 	 width:100%;
 	 z-index: 1;	
@@ -300,7 +300,9 @@ height: 300px;
 .body-section{
 	width: 100%;
 	height:auto;
-  	padding: 50px 30px 150px 30px;
+	top:0px;
+	left:0px;
+  	padding: 90px 30px 210px 30px;
   	margin: 30 auto;
   	display: block;
   	color:black; 
@@ -357,17 +359,19 @@ height: 300px;
     color:white;
 	position: fixed;
 	top: 0;
-	right:0%;
-	padding: 7px 10px 20px 590px;
+	right:0;
+	padding: 7px 0px 20px 390px;
+	
 }
 
 
 .top-menu > .right {
     float: right;
+    margin-right:20px;
 }
 
 .top-menu > .right > * {
-    margin-left: 5px;
+    margin-left: 0px;
 }
 
 .top-menu > .left {
@@ -375,7 +379,7 @@ height: 300px;
 }
 
 .top-menu > .left > * {
-    margin-right: 5px;
+    margin-right: 0px;
 }
 
 .top-menu > .left > *, .top-menu > .right > * {
@@ -403,7 +407,7 @@ height: 300px;
 
 @media screen and (max-width: 600px) {
     .top-menu {
-        padding: 10px 0px 50px 390px;
+        padding: 10px 0px 70px 390px;
         max-height: 0;
         overflow: hidden;
         z-index:1;
@@ -429,16 +433,17 @@ height: 300px;
 
     .top-menu.toggled > .left {
         border-bottom: 1px solid black;
-        margin: 5px 0 0 0 ;
+        margin: 0 0 0 0 ;
         z-index:1;
     }
 
     .top-menu.toggled *:not(.top-menu-icon) {
         float: none;
         display: block !important;
-        text-align: right;
-        margin: 20;
+        text-align: left;
+        margin: 0;
         z-index:1;
+        margin-left:0px;
     }
 
 }

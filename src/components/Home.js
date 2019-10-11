@@ -57,9 +57,8 @@ const heading = {
         
 
         
-<div className="body">        
-    <div class="section">
-		<div className="font-s">
+	<div className="body">        
+    	<div className="font-xl">
 			<div className="container py-5">
       			<div className="row">
       				<div className="mx-auto text-center text-slanted text-black my-5">
@@ -69,28 +68,27 @@ const heading = {
 				</div>
 			</div>
 		</div>
-    </div>
+    
         
-         <div class="section">
-		<div className="font-s">
+        <div class="section">
+			<div className="font-s">
       			<div className="row">
       				<div className="mx-auto text-center text-slanted text-black my-5">
       					<h2><strong>WHY YOU SHOULD BECOME A MENTEE</strong></h2>      				
         			</div>
 				</div>
 				<HomeCards />
-		</div>
-    </div>
+			</div>
+    	</div>
         
         
 		
 		
-	<div class="section">
-		<div className="font-s">
+	<div className="font-xl">
 			<div className="container py-5">
       			<div className="row">
       				<div className="mx-auto text-center text-slanted text-black my-5">
-      					<h2><strong>WHY YOU SHOULD BECOME A MENTOR</strong></h2>
+      								<h2><strong>WHY YOU SHOULD BECOME A MENTOR</strong></h2>
 		
 			Gain satisfaction from helping others<div></div>
 			Give people access to your knowledge and experience<div></div>
@@ -101,7 +99,7 @@ const heading = {
 				</div>
 			</div>
 		</div>
-    </div>
+    
     
     <div class="section">
     </div>
