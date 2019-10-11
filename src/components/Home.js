@@ -7,7 +7,8 @@ import {
  import Pulse from 'react-reveal/Pulse';
  import Reveal from 'react-reveal/Reveal';
  import HomeCards from "../HomeCards";
-
+ import styled from "styled-components"; 
+	
 function Home () {
 
 const heading = {
@@ -22,6 +23,7 @@ const heading = {
   
     
       <React.Fragment> 
+      
          <div class="media">
          
        	<h1 style={heading}>BE THE CHANGE<div>
@@ -35,7 +37,7 @@ const heading = {
   		 		
    		
    		<div class="media-body">
-  			<img src={"../../assets/images/ikar-boy.png"} class="img-fluid"  class="ml-3" style={{width: "48rem", height: "53.5rem"}} alt="Ikar">
+  			<img src={"../../assets/images/ikar-boy.png"} class="img-fluid"  class="ml-3" style={{width: "43rem", height: "43rem"}} alt="Ikar">
 			</img>
 		</div>
 		
@@ -44,18 +46,21 @@ const heading = {
 		
 		<div className="font-xl">
 			<div className="container py-5">
-      			<div className="row">
+      			<div className="row text-white">
 		
 		<h3>Discover the potential of knowledge and experience sharing.
 		<div>
 		Join the community of people whose main objective is helping others
 		<div> 
 		in disclosing their potential driving to personal success </div></div></h3>
+		
 		</div>
 		<div>
+		
 		</div>
         </div>
         </div>
+        
 
         
 	<div className="body">        
@@ -76,9 +81,11 @@ const heading = {
       			<div className="row">
       				<div className="mx-auto text-center text-slanted text-black my-5">
       					<h2><strong>WHY YOU SHOULD BECOME A MENTEE</strong></h2>      				
+        			
         			</div>
+        			<HomeCards />
 				</div>
-				<HomeCards />
+				
 			</div>
     	</div>
         

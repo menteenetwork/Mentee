@@ -398,16 +398,16 @@ height: 300px;
 }
 
 .top-menu .top-menu-icon {
-    padding: 10px;
+    padding: 0px;
     position: absolute;
     top: 0;
-    right: 0;
+    margin-right: 0px;
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .top-menu {
-        padding: 10px 0px 70px 390px;
+        padding: 10px 200px 70px 390px;
         max-height: 0;
         overflow: hidden;
         z-index:1;
@@ -425,7 +425,7 @@ height: 300px;
 
 @media screen and (max-width: 500px) {
     .top-menu.toggled {
-        padding:0px 20px 0px 200px;
+        padding:0px 0px 0px 200px;
         max-height: 1500px;
         transition: max-height 1s;
         z-index:1;
@@ -433,18 +433,18 @@ height: 300px;
 
     .top-menu.toggled > .left {
         border-bottom: 1px solid black;
-        margin: 40 40 30 90 ;
+        margin: 0 0 0 0 ;
         z-index:1;
-         background:black;
+        background:black;
     }
 
     .top-menu.toggled *:not(.top-menu-icon) {
         float: none;
         display: block !important;
         text-align: left;
-        margin: 60;
+        margin: 0;
         z-index:1;
-        margin-right:60px;
+        margin-right:0px;
         background:black;
     }
 
