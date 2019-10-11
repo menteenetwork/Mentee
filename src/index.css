@@ -425,7 +425,7 @@ height: 300px;
 
 @media screen and (max-width: 500px) {
     .top-menu.toggled {
-        padding:0px 0px 0px 250px;
+        padding:0px 20px 0px 200px;
         max-height: 1500px;
         transition: max-height 1s;
         z-index:1;
@@ -433,7 +433,7 @@ height: 300px;
 
     .top-menu.toggled > .left {
         border-bottom: 1px solid black;
-        margin: 40 40 30 30 ;
+        margin: 40 40 30 90 ;
         z-index:1;
          background:black;
     }
