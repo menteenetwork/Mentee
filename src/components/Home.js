@@ -42,8 +42,9 @@ const heading = {
 		</React.Fragment>
 		
 		
-		<div class="section">
-		<div className="font-s">
+		<div className="font-xl">
+			<div className="container py-5">
+      			<div className="row">
 		
 		<h3>Discover the potential of knowledge and experience sharing.
 		<div>
@@ -54,7 +55,7 @@ const heading = {
 		<div>
 		</div>
         </div>
-        
+        </div>
 
         
 	<div className="body">        
@@ -70,8 +71,8 @@ const heading = {
 		</div>
     
         
-        <div class="section">
-			<div className="font-s">
+        <div className="font-xl">
+			<div className="container py-5">
       			<div className="row">
       				<div className="mx-auto text-center text-slanted text-black my-5">
       					<h2><strong>WHY YOU SHOULD BECOME A MENTEE</strong></h2>      				
@@ -104,20 +105,20 @@ const heading = {
     <div class="section">
     </div>
         
-	<div class="section">
-		<div className="font-s">
+		<div className="font-xl">
 			<div className="container py-5">
       			<div className="row">
-      					<h2>If you are an employer</h2>		
+      				<div className="mx-auto text-center text-slanted text-black my-5">
+       					<h2>If you are an employer</h2>		
       				</div>
 		<p>The personal development of people is the key to the success of every organisation.<div></div>
 		Become a mentor so you can shape mentees into future employees you will want to incorporate into your business.<div></div>
  		Choose those who perform best and better meet the needs of your business. 
 		<div></div>
 		Search easily mentees with the set of skills you want</p>
-			</div>				
-		</div>
-    </div>
+				</div>				
+			</div>
+    	</div>
 
 		<div className="font-xl">
 			<div className="container py-5">

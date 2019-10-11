@@ -360,14 +360,14 @@ height: 300px;
 	position: fixed;
 	top: 0;
 	right:0;
-	padding: 7px 0px 20px 390px;
+	padding: 7px 0px 30px 390px;
 	
 }
 
 
 .top-menu > .right {
     float: right;
-    margin-right:20px;
+    margin-right:40px;
 }
 
 .top-menu > .right > * {
@@ -423,9 +423,9 @@ height: 300px;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .top-menu.toggled {
-        padding: 0px 0 0 30;
+        padding:0px 0px 0px 250px;
         max-height: 1500px;
         transition: max-height 1s;
         z-index:1;
@@ -433,17 +433,19 @@ height: 300px;
 
     .top-menu.toggled > .left {
         border-bottom: 1px solid black;
-        margin: 0 0 0 0 ;
+        margin: 40 40 30 30 ;
         z-index:1;
+         background:black;
     }
 
     .top-menu.toggled *:not(.top-menu-icon) {
         float: none;
         display: block !important;
         text-align: left;
-        margin: 0;
+        margin: 60;
         z-index:1;
-        margin-left:0px;
+        margin-right:60px;
+        background:black;
     }
 
 }
