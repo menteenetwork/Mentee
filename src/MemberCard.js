@@ -102,7 +102,7 @@ const MemberWrapper = styled.div`
 .card{
 	border-color:transparent;
 	transition:all 0.5s linear;
-	box-shadow:6px 6px 6px 0px rgba(1,0,0,0.2);
+	box-shadow:10px 10px 10px 6px rgba(2,1,0,0.2);
 	color:black;
 	
 }
@@ -115,10 +115,17 @@ const MemberWrapper = styled.div`
 }
 &:hover{
 	.card{
-	box-shadow:2px 2px 5px 0px rgba(2,0,0,0.2)
+	transition:all 0.5s linear;
+    box-shadow:8px 8px 8px 2px rgba(1,0,0,0.2);
+    background: black;
+	color:white;
+	
 }
 	.card-footer {
-	background: rgba(250,250,250);
+	background: black;
+	color:white;
+	transition:all 0.5s linear;
+    box-shadow:12px 12px 12px 12px rgba(3,2,1,0.2);
 	}}
 	
 .images-container{
@@ -138,7 +145,10 @@ const MemberWrapper = styled.div`
 	position:absolute;
 	bottom:0;
 	right:0;
+	width:100%;
 	
+    height:100%;
+    font-size:14px;
 	background:var(--lightGreen);
 	border:none;
 	color: var(--mainWhite);

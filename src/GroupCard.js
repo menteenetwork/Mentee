@@ -105,7 +105,8 @@ const GroupWrapper = styled.div`
 .card{
 	border-color:transparent;
 	transition:all 0.5s linear;
-	box-shadow:1px 1px 3px 0px rgba(1,0,0,0.2);
+	box-shadow:10px 10px 10px 6px rgba(2,1,0,0.2);
+	color:black;
 	
 }
 .card-footer{
@@ -117,11 +118,17 @@ const GroupWrapper = styled.div`
 }
 &:hover{
 	.card{
-	border:0.06rem solid rgba(1,0,0,0.3);
-	box-shadow:2px 2px 5px 0px rgba(1,0,0,0.2)
+	transition:all 0.5s linear;
+    box-shadow:8px 8px 8px 2px rgba(1,0,0,0.2);
+    background: black;
+	color:white;
+	
 }
 	.card-footer {
-	background: rgba(250,250,250);
+	background: black;
+	color:white;
+	transition:all 0.5s linear;
+    box-shadow:12px 12px 12px 12px rgba(3,2,1,0.2);
 	}}
 	
 .images-container{
@@ -141,15 +148,17 @@ const GroupWrapper = styled.div`
 	position:absolute;
 	bottom:0;
 	right:0;
+	width:100%;
 	
+    height:100%;
+    font-size:14px;
 	background:var(--lightGreen);
 	border:none;
 	color: var(--mainWhite);
 	transform:translate(100%,100%);
 	transition:all 0.5s linear;
 }
-.images-container:hover 
-	.add-btn {
+.images-container:hover .add-btn {
 	transform: translate(0,0);
 	
 }
@@ -160,9 +169,11 @@ img{
 
 .add-btn:hover{
 	background:var(--mainWhite);
-	border:0.06rem solid;
+	
 	color: var(--lightGreen);
 	cursor:pointer;}
+	
+
 `;
 
 

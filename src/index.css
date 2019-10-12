@@ -432,6 +432,7 @@ height: 300px;
         max-height: 1500px;
         transition: max-height 1s;
         z-index:1;
+        background:black;
     }
 
     .top-menu.toggled > .left {
@@ -455,7 +456,8 @@ height: 300px;
         max-height: 1500px;
         transition: max-height 1s;
         z-index:1;
-        background:white;
+        background:black;
     }
 
 }
+
