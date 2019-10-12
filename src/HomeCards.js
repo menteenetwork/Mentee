@@ -70,6 +70,8 @@ render () {
 const CardWrapper = styled.div`
 
 .card{
+	right:50%;
+	left:50%;
 	width: 15rem;
 	color: black;
 	border-color:transparent;
@@ -90,6 +92,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14e081', end
 
 
 .card:hover {
+	transition:all 0.5s linear;
 	box-shadow:8px 8px 8px 8px rgba(1,5,0,0.2)
 }
 

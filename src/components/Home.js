@@ -71,24 +71,28 @@ const heading = {
       					<h2><strong>Access the power of mentors</strong></h2>
 						<p>Learn, gain new skills, record them on the blockchain, and prove others what you really know doing</p>
 					</div>
+					
 				</div>
 			</div>
-		</div>
+			
+		</div> 
     
-        
-        <div className="font-xl">
-			<div className="container py-5">
-      			<div className="row">
-      				<div className="mx-auto text-center text-slanted text-black my-5">
-      					<h2><strong>WHY YOU SHOULD BECOME A MENTEE</strong></h2>      				
-        			
+     <div class="section">
+    </div>
+    
+       <StyleWrapper>
+        	<div className="card">
+      			<div className="font-xl">		     				
+        			<div className="mx-auto text-center text-slanted text-black my-5">
+        			  <h2><strong>WHY YOU SHOULD BECOME A MENTEE</strong></h2>
         			</div>
         			<HomeCards />
-				</div>
-				
+        		</div>
 			</div>
-    	</div>
-        
+		</StyleWrapper>		
+			
+    <div class="section">
+    </div>     
         
 		
 		
@@ -163,3 +167,15 @@ const heading = {
 
  
 export default Home
+
+const StyleWrapper = styled.div`
+.card{
+	left:0%;
+	width:100%;
+	padding:10px;
+	background-color: #ededed;
+	border:0px;
+
+}
+
+`

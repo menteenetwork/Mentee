@@ -32,6 +32,9 @@ font-family: 'Oswald', sans-serif;
 
 }
 
+
+
+
 .page-body {
   background-color: #FFFFFF;
   background-size: auto;
@@ -446,6 +449,13 @@ height: 300px;
         z-index:1;
         margin-right:0px;
         background:black;
+    }
+    .top-menu.toggled:hover {
+        padding:0px 0px 0px 200px;
+        max-height: 1500px;
+        transition: max-height 1s;
+        z-index:1;
+        background:white;
     }
 
 }
