@@ -15,7 +15,7 @@ font-size: 16px;
 
 &:hover {
 	background: ${prop => prop.MyNetworkMentees ? "var(--lightGreen)" : "var(--darkGreen)"};
-	color: var(--mainWhite);
+	color: white;
 }
 &:focus {
 	outline:none;
