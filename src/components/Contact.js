@@ -5,8 +5,7 @@ function Contact () {
     return (
       <div class="page-body">
       <StyleWrapper>
-      	<div class="body-section">
-      
+      	<div class="body-section">    
         	<h2>GOT QUESTIONS?</h2>
         	<p>Contact <a href="http://mentee.network/contact">us</a>
         	</p>

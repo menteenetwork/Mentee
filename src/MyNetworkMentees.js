@@ -6,7 +6,8 @@ import NetworkColumns from "./NetworkColumns"
 import EmptyNetwork from "./EmptyNetwork"
 import {MemberConsumer} from "./Context"
 import MembersList from "./MembersList"
-import styled from 'styled-components';
+import styled from 'styled-components'
+import SearchUser from "./SearchUser"
 
 function MyNetworkMentees () {
     return (
@@ -28,6 +29,7 @@ function MyNetworkMentees () {
             		<input placeholder="Add a new member">
             		</input>
             		<button type="submit">SEARCH</button>
+            		<SearchUser/>
           		</form>
         	
      	 	</div>

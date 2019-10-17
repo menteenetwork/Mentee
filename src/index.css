@@ -32,7 +32,9 @@ font-family: 'Oswald', sans-serif;
 
 }
 
-
+item{
+background-color:red;
+}
 
 
 .page-body {
@@ -461,5 +463,76 @@ height: 300px;
     }
 
 }
+/* Skills container */
+* {box-sizing:border-box}
+
+.skills-container {
+  width: 100%; 
+  background-color: #ededed; 
+  text-align: left;
+  padding-left: 10px; 
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  color: white; 
+}
+
+.css {
+	width: 80%; background-color: var(--lightGreen);
+	}
+.css1 {
+	width: 40%; background-color: var(--lightGreen);
+	}
+.css2 {
+	width: 70%; background-color: var(--lightGreen);
+	}
 
 
+/* Search field */
+#myInput {
+  background-image: url('/css/searchicon.png'); 
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; 
+  font-size: 16px; 
+  padding: 12px 20px 12px 40px; 
+  border: 1px solid #ddd; 
+  margin-bottom: 12px; 
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; 
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; 
+  padding: 12px; 
+  text-decoration: none; 
+  font-size: 18px; 
+  color: black; 
+  display: block; 
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; 
+}
+
+.filter{
+  
+  border: 1px solid #ddd; 
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; 
+  padding: 12px; 
+  text-decoration: none; 
+  font-size: 18px; 
+  color: black; 
+  display: block; 
+}

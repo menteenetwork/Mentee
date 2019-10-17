@@ -3,7 +3,8 @@ import MemberCard from "./MemberCard"
 import Title from "./Title"
 import {MemberConsumer} from "./Context"
 import {MembersData} from "./MembersData"
-import styled from 'styled-components';
+import styled from 'styled-components'
+import SearchUser from "./SearchUser"
 
 export default class Members extends Component {
 	state = {
@@ -20,9 +21,7 @@ export default class Members extends Component {
         		<div className="searchBar">
         	
           			<form>
-            			<input placeholder="Search a member">
-            			</input>
-            			<button type="submit">SEARCH</button>
+            			<SearchUser/>
           			</form>
         	
      	 		</div>

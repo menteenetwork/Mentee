@@ -34,8 +34,8 @@ function Details () {
 	
     return (
 
-    <MyContainer>
-     
+    
+     <MyContainer>
 			
       <MemberConsumer>
      
@@ -44,61 +44,66 @@ function Details () {
       	value.MemberDetail;
       	
       	return(
-      	 <div class="font-s">
-        	<div class="card">
-        		<div class="section">
-        			<div className="col-10 mx-auto">
-        				<strong><h1>{name}</h1></strong>
-        				<NavLink to = "/PlanetDetails">
-        					<img src={img}   style={{width: "15rem", height: "15rem"}}
-        					className="img-fluid" alt="mentee" />
-        				</NavLink>
-        					<div>	
-        					<p>Location : {location}</p>
-        					<p>Profession: {profession}</p>
-        					</div>
-        			</div>
-        		<div className="container py-5">
-        			<div class=" my-3 mx-auto" >
-        			< TokenButtons />
-        			</div>
-        		</div>
+      	
+<div class="font-s">
+	<div class="section">
+        <div className="col-10 mx-auto">
+        	<strong><h1>{name}</h1></strong>
+        </div>
+        	<NavLink to = "/PlanetDetails">
+        		<img src={img}   style={{width: "15rem", height: "15rem"}}
+        			className="img-fluid" class="responsive" alt="mentee" />
+        		</NavLink>
+        			
+        	<p>Location : {location}</p>
+        	<p>Profession: {profession}</p>
+        </div>
+        
         	
-        		<span className="col-10 mx-auto">	
-       	 			<h2>About me:</h2>
-       	 			<h4 className="text-title text-uppercase text-muted mt-3 mb-2"></h4>
+    	<div className="container py-5">
+        	<div class=" my-3 mx-auto" >
+        		< TokenButtons />
+        	</div>
+    	</div>
+        	
+    	<span className="col-10 mx-auto">	
+       	 	<h2>About me:</h2>
+       	 		<h4 className="text-title text-uppercase text-muted mt-3 mb-2"></h4>
        				<p className="text-muted lead">{about}</p>
-       			</span>
+   		 </span>
         		
         	
         
       	
-    <div className="container py-5">
-    	<MyContainer>
-      		<div class="button my-3 mx-auto" ><NavLink to="/MyNetworkMentees">MY NETWORK</NavLink>
+    	<div className="container py-5">
+    		<MyContainer>
+      			<div class="button my-3 mx-auto" >
+      				<NavLink to="/MyNetworkMentees">MY NETWORK</NavLink>
        			</div>
  
-			<ButtonContainer MyNetworkMentees
-				disabled={inNetwork? true:false}
+				<ButtonContainer MyNetworkMentees
+					disabled={inNetwork? true:false}
 					onClick={() => {
 					value.addMember(id);
 					value.openModal(id);
 					}}
 					>
 					{inNetwork? "in Network" : "add to network"}
-			</ButtonContainer>
-		</MyContainer>
- 		<div class="section">
- 		</div>
-      	<h2>Account activity timeline</h2>  
+				</ButtonContainer>
+			</MyContainer>
+			
+ 			<div class="section">
+ 			</div>
+      			
+      		<h2>Account activity timeline</h2>  
       	
 {/* Here should appear a timeline including Menteepower, Mentorpower transactions 
       	 in different time intervals: 7 dyas, 1 month, 3 months, 6 months, 1 year */}
       	 
-      	<h2>Blockchain CV</h2> 
+      		<h2>Blockchain CV</h2> 
       	
     		<MyContainer>
-         		<div class="btn-group button"><NavLink to="/Details">OVERVIEW</NavLink></div>
+         		 <div class="btn-group button"><NavLink to="/Details">OVERVIEW</NavLink></div>
         		 <div class="btn-group button"><NavLink to="/CVCourses">COURSES</NavLink></div>
         	</MyContainer>
  		
@@ -107,9 +112,9 @@ function Details () {
  			*/}
  			
         	<ul>
-        	<li><p>Experience</p></li>
-        	<li><p>Skills</p></li>
-        	<li><p>Education</p></li>
+        	<p>Experience</p>
+        	<p>Skills</p>
+        	<p>Education</p>
  			</ul>
  			
 {/* This image will be interactive and will reflect all data contained in Mentee's account */}
@@ -119,16 +124,14 @@ function Details () {
  			
        </div>
     </div>	
-    </div>		
-  </div>
-
+   
       );
       }}
       
       </MemberConsumer>
       		
-  
-    </MyContainer>
+  </MyContainer>	
+   
       
     )
   }
@@ -137,7 +140,7 @@ function Details () {
 export default Details
 
 const MyContainer = styled.div`
-
+ background:white;
 	font-family: 'Oswald', sans-serif;
 	width:100%;
 	height:100%;
@@ -160,8 +163,7 @@ img{
 	background: -o-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
 	background: -ms-linear-gradient(left, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
 	background: linear-gradient(to right, rgba(0,230,142,1) 0%, rgba(0,230,142,1) 5%, rgba(0,149,168,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e68e', endColorstr='#0095a8', GradientType=1 );
-   	
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00e68e', endColorstr='#0095a8', GradientType=1 );   	
 }
 
 .button{
@@ -178,7 +180,10 @@ color:black;
 	text-decoration:none;
 }}
 
-
+.responsive {
+  width: 100%;
+  height: auto;
+}
 
 h1{
 	font-size:60px;

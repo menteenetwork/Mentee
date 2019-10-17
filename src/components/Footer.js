@@ -47,4 +47,5 @@ const ColumnsFooter = styled.div`
 .column {
   flex: 50%;
 }
+
 `

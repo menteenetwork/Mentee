@@ -47,7 +47,7 @@ let top_menu_class = `top-menu ${this.state.menu_class}`
         	
       </StyledWrapper>
                 <div className={top_menu_class} >
-                    <div className='right'>
+                    <div className="right">
                     	<li><NavLink to="/details">login</NavLink></li>
                         <li><NavLink exact to="/">home</NavLink></li>
             			<li><NavLink to="/contact">contact</NavLink></li>
@@ -58,7 +58,7 @@ let top_menu_class = `top-menu ${this.state.menu_class}`
              
                     </div>
                     <i class="fa fa-bars fa-2x" aria-hidden="true" onClick={this.setToggleTopMenuClass}></i>
-                    <div className='clear-fix' />
+                    
                 </div>
             </div>
       
