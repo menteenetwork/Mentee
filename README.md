@@ -164,4 +164,5 @@ We use https://github.com/qTox/qTox code base to build encrypted video communica
 ## Blockchain CV
 Blockchain CV is an NFT token with some off-chain data that will be accessible by mentors on demand. We can use https://github.com/unicoeos/eosio.nft. Here's a list of all EOSIO standards https://github.com/eosio-standards-wg/tokenconfigs
 The CV example we aim for is below
-![Image description](blockchain cv.png)
+
+![Image description](https://github.com/Commoneffort/mentee.network/blob/master/public/assets/images/blockchain%20cv.png)
