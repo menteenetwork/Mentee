@@ -65,6 +65,7 @@ Mentee and mentor fill his profile with the following information:
 
 - MNT stake, total MNT, available MNT, Mneteepower, Mentorpower
 - location
+- eos account
 - name
 - profession
 - about me
@@ -113,4 +114,40 @@ The mentee needs to stake MNT tokens to accept a task created by a mentor. After
 
 ## Minute-payment
 A mentor sets the price for each minute of his consulting. He starts the clock when a mentee checks in. 
+
+
+# Development instructions
+Start by joining https://t.me/menteenetdev on Telegram 
+
+At the current stage, we started building the front end in react and we have also Scatter implementation that needs to get updated and connected to the user profile.
+Mentee is built on the https://github.com/EveripediaNetwork code base and it uses https://github.com/qTox/qTox for communication, files transfer, groups, and screen sharing.
+
+## Educational courses
+Use https://github.com/EveripediaNetwork/backend-api to build Generate edu, Edit edu, Generate task. Everipedia's article module need to be transformed into modules for educational courses, quizzes and tasks.
+
+## User profile
+Use https://github.com/EveripediaNetwork/backend-api to build user profile. It requires Scatter connection.
+User profile needs to handle the following information:
+On-chain:
+- Balance detail: MNT stake, total MNT, available MNT, Mneteepower, Mentorpower
+- location
+- eos account
+- name
+- profession
+- about me
+- photo
+- goals
+- mentors
+- mentees
+- my courses
+- my votes
+- activity
+- education
+- skills
+- experience
+Off-chain, saved on IPFSs, private
+- detailed feedback from mentors and mentees
+- character traits
+
+We can use https://github.com/TokTok/c-toxcore to handle mentee-mentor connection requests.
 
