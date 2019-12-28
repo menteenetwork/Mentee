@@ -116,10 +116,14 @@ The mentee needs to stake MNT tokens to accept a task created by a mentor. After
 A mentor sets the price for each minute of his consulting. He starts the clock when a mentee checks in. 
 
 
+
 # Development instructions
+We invite everyone to help building Menee platform to create a fully decentralized EOSIO based app.
 Start by joining https://t.me/menteenetdev on Telegram 
 
-At the current stage, we started building the front end in react and we have also Scatter implementation that needs to get updated and connected to the user profile.
+At the current stage, we started building the front end in react (consultable here https://menteenetwork.commoneffort.now.sh/#/ or here https://www.youtube.com/watch?v=CvB9wc7p_bA&feature=youtu.be).
+
+We have also Scatter implementation that needs to get updated and connected to the user profile.
 Mentee is built on the https://github.com/EveripediaNetwork code base and it uses https://github.com/qTox/qTox for communication, files transfer, groups, and screen sharing.
 
 ## Educational courses
@@ -145,9 +149,19 @@ On-chain:
 - education
 - skills
 - experience
-Off-chain, saved on IPFSs, private
+Off-chain, saved on dStore, private
 - detailed feedback from mentors and mentees
 - character traits
 
 We can use https://github.com/TokTok/c-toxcore to handle mentee-mentor connection requests.
 
+## Token contract
+The MNT token will use the same token contract as Everipedia https://github.com/EveripediaNetwork/Everipedia with the difference that instead of Brainpower the contract will mint Menteepower and Mentorpower for the activities pertaining to mentees and mentors. Total MNT supply is 1B with an initial 5% inflation rate.
+
+## Communication
+We use https://github.com/qTox/qTox code base to build encrypted video communication, voice calls, and instant messagging. qTox is built from https://github.com/TokTok/c-toxcore. The Mentee platform should have all the functionalities of qTox. 
+
+## Blockchain CV
+Blockchain CV is an NFT token with some off-chain data that will be accessible by mentors on demand. We can use https://github.com/unicoeos/eosio.nft. Here's a list of all EOSIO standards https://github.com/eosio-standards-wg/tokenconfigs
+The CV example we aim for is below
+![Image description](blockchain cv.png)
