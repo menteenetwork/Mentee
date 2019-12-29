@@ -56,10 +56,10 @@ There are three resource types in the platform: CPU, NET, RAM.
 The user will need to manage these resources by its own. 
 
 # Blockchain CV
-Blockchain CV is an arbitrary size 2D grid. Each cell represents a category. Each category may be filled with information (transactions about mentorship activity, completed tasks, courses, quizzes, certificates, attestations etc.) or not. Each user may have multiple mentors who contributed to his blockchain CV.
+Blockchain CV is an arbitrary size 2D circular grid. Each cell represents a category. Each category may be filled with information (transactions about mentorship activity, completed tasks, courses, quizzes, certificates, attestations etc.) or not. Each user may have multiple mentors who contributed to his blockchain CV.
 
 # Mentees
-Mentees and mentors represent the main platform object. A mentee may be have a mentor or it may be awaiting to be approved.
+Mentees and mentors represent the main platform object. A mentee may have a mentor or it may be awaiting to be approved.
 
 Mentee and mentor fill his profile with the following information:
 
@@ -84,7 +84,7 @@ Mentees and mentors both need to work on the development of the knowledge and sk
 
 - Each mentor can open a free group. The group with over 2 mentees will require an additional stake. Adding each ten mentees (10, 20, 30 etc.) requires more stake.
 
-- Additionally to the mentorship, each mentor will have the ability to set a minute-payment for each minute of their time so they can work as profssional advisers directly from the platform. Mentee collects a fee for this activity.
+- Additionally to the mentorship, each mentor will have the ability to set a minute-payment for each minute of their time so they can work as profssional advisers directly from the platform. Mentee platform collects a fee for this activity.
 
 - Courses, quizzes, tests, tasks creation generates Mentorpower
 
@@ -93,14 +93,14 @@ Mentees and mentors both need to work on the development of the knowledge and sk
 - Voting on courses, quizzes, tasks, tests generates Mentorpower
 
 ## Mentorpower
-Voting on course edit proposals will generate stakes of MNT tokens for a period of 21 days. Voting up or down the course edit proposals stakes MNT for the amount of the vote. Proposing an edit stakes 50 MNT as an anti-spam measure.
+Voting on course edit proposals will require a stake of MNT tokens for a period of 21 days. Voting up or down the course edit proposals stakes MNT for the amount of the vote. Proposing an edit stakes 50 MNT as an anti-spam measure.
 
 
 # Actions
 
 ## Generate edu
 A function called each time a user wants to create an educational course, quiz, test etc. It can be presented under the form of questions, videos, graphics, pictures, etc. Each time an edu is created it will be available for approval of other users. The more users voted on a specific edu, the more reliable the information contained in it is. The edu module is used to create
-courses to be included in the database. Proposed tasks contain an IPFS hash time stamped on the EOS blockchain. Staked MNT tokens are needed for edu creation. The user creates Menteepower for each successful edu.
+courses to be included in the database. Proposed tasks contain an IPFS (or dStor) hash time stamped on the EOS blockchain. Staked MNT tokens are needed for edu creation. The user creates Menteepower for each successful edu.
 
 ## Edit edu
 Edit edu function is called each time a user wants to edit an edu module. Each proposed change is a tuple object containing an IPFS hash pointing to the parent version as well as an IPFS hash pointing to the new version. Staked MNT tokens are
@@ -124,10 +124,10 @@ Start by joining https://t.me/menteenetdev on Telegram
 At the current stage, we started building the front end in react (consultable here https://menteenetwork.commoneffort.now.sh/#/ or here https://www.youtube.com/watch?v=CvB9wc7p_bA&feature=youtu.be).
 
 We have also Scatter implementation that needs to get updated and connected to the user profile.
-Mentee is built on the https://github.com/EveripediaNetwork code base and it uses https://github.com/qTox/qTox for communication, files transfer, groups, and screen sharing.
+Mentee is planned to be built on the https://github.com/EveripediaNetwork code base and it will use https://github.com/qTox/qTox for communication, files transfer, groups, and screen sharing.
 
 ## Educational courses
-Use https://github.com/EveripediaNetwork/backend-api to build Generate edu, Edit edu, Generate task. Everipedia's article module need to be transformed into modules for educational courses, quizzes and tasks.
+Use https://github.com/EveripediaNetwork/backend-api to build Generate edu, Edit edu, Generate task (see above). Everipedia's article module need to be transformed into module for educational courses, quizzes and tasks.
 
 ## User profile
 Use https://github.com/EveripediaNetwork/backend-api to build user profile. It requires Scatter connection.
@@ -149,20 +149,23 @@ On-chain:
 - education
 - skills
 - experience
-Off-chain, saved on dStore, private
+Off-chain, saved on IPFS or dStore, private
 - detailed feedback from mentors and mentees
 - character traits
 
 We can use https://github.com/TokTok/c-toxcore to handle mentee-mentor connection requests.
 
 ## Token contract
-The MNT token will use the same token contract as Everipedia https://github.com/EveripediaNetwork/Everipedia with the difference that instead of Brainpower the contract will mint Menteepower and Mentorpower for the activities pertaining to mentees and mentors. Total MNT supply is 1B with an initial 5% inflation rate. 
+The MNT token will use the same token contract as Everipedia https://github.com/EveripediaNetwork/Everipedia with the difference that instead of Brainpower the contract will mint Menteepower and Mentorpower for the activities pertaining to mentees and mentors. 
+Total MNT supply is 1B with an initial 5% inflation rate. Each time the contract mints 5 Menteepower or 5 Mentorpower, 1 Menteepower or 1 Mentorpower is minted and sent to the Mentee DAC account menteedac.x
 
 ## Communication
 We use https://github.com/qTox/qTox code base to build encrypted video communication, voice calls, and instant messagging. qTox is built from https://github.com/TokTok/c-toxcore. The Mentee platform should have all the functionalities of qTox. 
 
 ## Blockchain CV
-Blockchain CV is an NTT (non-transferabe token) with some off-chain data that will be accessible by mentors on demand. We want to use https://github.com/CryptoLions/SimpleAssets. Here's a list of all EOSIO standards https://github.com/eosio-standards-wg/tokenconfigs
+Blockchain CV is an NTT (non-transferabe token) with some off-chain data that will be accessible by mentors or anyone else on demand. We want to use https://github.com/CryptoLions/SimpleAssets. Here's a list of all EOSIO standards https://github.com/eosio-standards-wg/tokenconfigs
 The CV example we aim for is below
 
 ![Image description](https://github.com/Commoneffort/mentee.network/blob/master/public/assets/images/blockchain%20cv.png)
+
+## 
