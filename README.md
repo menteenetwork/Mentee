@@ -156,13 +156,13 @@ Off-chain, saved on dStore, private
 We can use https://github.com/TokTok/c-toxcore to handle mentee-mentor connection requests.
 
 ## Token contract
-The MNT token will use the same token contract as Everipedia https://github.com/EveripediaNetwork/Everipedia with the difference that instead of Brainpower the contract will mint Menteepower and Mentorpower for the activities pertaining to mentees and mentors. Total MNT supply is 1B with an initial 5% inflation rate.
+The MNT token will use the same token contract as Everipedia https://github.com/EveripediaNetwork/Everipedia with the difference that instead of Brainpower the contract will mint Menteepower and Mentorpower for the activities pertaining to mentees and mentors. Total MNT supply is 1B with an initial 5% inflation rate. 
 
 ## Communication
 We use https://github.com/qTox/qTox code base to build encrypted video communication, voice calls, and instant messagging. qTox is built from https://github.com/TokTok/c-toxcore. The Mentee platform should have all the functionalities of qTox. 
 
 ## Blockchain CV
-Blockchain CV is an NFT token with some off-chain data that will be accessible by mentors on demand. We can use https://github.com/unicoeos/eosio.nft. Here's a list of all EOSIO standards https://github.com/eosio-standards-wg/tokenconfigs
+Blockchain CV is an NTT (non-transferabe token) with some off-chain data that will be accessible by mentors on demand. We want to use https://github.com/CryptoLions/SimpleAssets. Here's a list of all EOSIO standards https://github.com/eosio-standards-wg/tokenconfigs
 The CV example we aim for is below
 
 ![Image description](https://github.com/Commoneffort/mentee.network/blob/master/public/assets/images/blockchain%20cv.png)
