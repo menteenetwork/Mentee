@@ -50,10 +50,7 @@ export default GroupChannel
 const StyledWrapper = styled.div`
 
 .font-s{
- a{
-	color:black;
-	text-decoration:none;
-}}
+e
 
 .font-s{
 a:hover{

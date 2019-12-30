@@ -21,7 +21,7 @@ export default class Members extends Component {
         		<div className="searchBar">
         	
           			<form>
-            			<SearchUser/>
+            			
           			</form>
         	
      	 		</div>

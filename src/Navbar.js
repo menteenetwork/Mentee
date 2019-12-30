@@ -58,7 +58,7 @@ let top_menu_class = `top-menu ${this.state.menu_class}`
              
                     </div>
                     <i class="fa fa-bars fa-2x" aria-hidden="true" onClick={this.setToggleTopMenuClass}></i>
-                    
+                    <div className="clear-fix" />
                 </div>
             </div>
       

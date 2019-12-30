@@ -7,6 +7,8 @@ import styled from 'styled-components';
 import EOSIOClient from './EOSIOClient';
 import Token from './EOSIOClient';
 import TokenButtons from './TokenButtons'
+import AboutMeForm from "./AboutMeForm"
+
 
 const sleep = (milliseconds) => {
 	return new Promise(resolve => setTimeout(resolve, milliseconds))
@@ -57,6 +59,7 @@ function Details () {
         			
         	<p>Location : {location}</p>
         	<p>Profession: {profession}</p>
+        	<AboutMeForm />
         </div>
         
         	

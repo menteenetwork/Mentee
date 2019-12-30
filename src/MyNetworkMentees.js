@@ -29,7 +29,7 @@ function MyNetworkMentees () {
             		<input placeholder="Add a new member">
             		</input>
             		<button type="submit">SEARCH</button>
-            		<SearchUser/>
+            		
           		</form>
         	
      	 	</div>
