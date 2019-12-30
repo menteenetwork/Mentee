@@ -17,10 +17,9 @@ import Mission from "./components/Mission"
 import Blog from "./components/Blog"
 import Whitepaper from "./components/Whitepaper"
 import Footer from "./components/Footer"
-
+import NotFoundPage from "./NotFoundPage"
 import Index from "./index.css"
 import Members from "./Members"
-import NotFoundPage from "./NotFoundPage"
 import DesignCourse from "./DesignCourse"
 import LearnCourse from "./LearnCourse"
 import Groups from "./Groups"
@@ -70,7 +69,7 @@ return (
             <Route path="/login" component={Details}/>
             <Route exact path="/members" component={Members}/>
             <Route exact path="/notfoundpage" component={NotFoundPage}/>
-            <Redirect to="/NotFoundPage"/>
+            
             <Route path="/designcourse" component={DesignCourse}/>
             <Route path="/learncourse" component={LearnCourse}/>
             <Route path="/groups" component={Groups}/>
