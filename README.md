@@ -27,7 +27,7 @@ Mentee is a platform intended to be developed on top of EOSIO blockchain. Main c
 
 # Platform mechanics
 
-Mentees will stake their MNT tokens and take to the platform to look for mentors with whom they will enter in contact through chat or a vieo conference. Mentees will also go through different courses created by other platform participants, quizzes and tests to check the level of their knowledge and visualize it on the blockchain CV diagram. All actions will take place and are processed in the EOSIO blockchain. 
+Mentees will stake their MNT tokens and take to the platform to look for mentors with whom they will enter in contact through chat or a video conference. Mentees will also go through different courses created by other platform participants, quizzes and tests to check the level of their knowledge and visualize it on the blockchain CV diagram. All actions will take place and are processed in the EOSIO blockchain. 
 Mentees and mentors will get Menteepower and Mentorpower from their mentorship activity and from creating courses and solving quizzes and tests. They will interact with the smart contract during platform activities thus they need to have a signed up EOSIO account.
 Mentees and mentors will vote on courses, quizzes and tests to create a decentralized source of verified repository of educative material. Mentors will give mentees tasks to make them gain new skills and knowledge. A mentor will be also able to create a task for anyone to pick and he will then have the possibility to choose the best to join his team.
 Platform's state is recorded and stored on the blockchain.
