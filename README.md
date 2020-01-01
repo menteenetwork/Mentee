@@ -156,8 +156,17 @@ Off-chain, saved on IPFS or dStore, private
 We can use https://github.com/TokTok/c-toxcore to handle mentee-mentor connection requests.
 
 ## Token contract
-The MNT token will use the same token contract as Everipedia https://github.com/EveripediaNetwork/Everipedia with the difference that instead of Brainpower the contract will mint Menteepower and Mentorpower for the activities pertaining to mentees and mentors. 
+The MNT token will use the same token contract as Everipedia https://github.com/EveripediaNetwork/Everipedia with the difference that instead of Brainpower the contract will mint Menteepower and Mentorpower for the activities pertaining to mentees and mentors.  
 Total MNT supply is 1B with an initial 5% inflation rate. Each time the contract mints 5 Menteepower or 5 Mentorpower, 1 Menteepower or 1 Mentorpower is minted and sent to the Mentee DAC account menteedac.x
+
+A total of 500 MNT tokens are distributed as rewards every 30 minutes. The MNT rewards are split between editors who propose edits (80%) that are accepted and voters who vote with the majority (20%).  An individual MNT reward is determined in proportion to the total value of a user’s contributions. This includes:
+	•	MNT staked for edits accepted on the network
+	•	MNT staked for votes in the majority
+For each edit proposal and course created, there is a set proportion of rewards given to the editor and the majority voters.  
+If the user votes in the minority, his MNT tokens are not lost. Instead, those tokens are locked up for an extended period of time. 
+For edit proposals, the time period is 12 hours (starting from the time the editor proposes the edit). Voting is based on a majority rule: if there are more ‘accept’ votes than ‘reject’ votes, the edit is incorporated into the course and stored on the network.
+A rejected edit or vote against the majority means that the MNT tokens that the user used to propose an edit or make a vote will be locked up for a period of time that is proportional to the difference between the total number of votes in the majority and the minority.  This is called slashing.  After the lock-up period, the original MNT tokens will be returned to the account and will be available for future editing and voting.
+
 
 ## Communication
 We use https://github.com/qTox/qTox code base to build encrypted video communication, voice calls, and instant messagging. qTox is built from https://github.com/TokTok/c-toxcore. The Mentee platform should have all the functionalities of qTox. 
