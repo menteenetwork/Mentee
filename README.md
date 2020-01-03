@@ -119,7 +119,7 @@ A mentor sets the price for each minute of his consulting. He starts the clock w
 
 # Development instructions
 We invite everyone to help building Menee platform to create a fully decentralized EOSIO based app.
-Start by joining https://t.me/menteenetdev on Telegram 
+Start by joining https://t.me/menteenetdev on Telegram or https://join.slack.com/t/mentee-network/shared_invite/enQtODk0NjQ5NDIwNzI2LWE2MGUzMDJlMzQ4NmE1YzJiMDBhZWRlNDc1MTFiMTY1NTAxY2NlYzMzZWZiMmRmNDdlMjYzZThmMTNlNTBhMmI on Slack
 
 At the current stage, we started building the front end in react (consultable here https://menteenetwork.commoneffort.now.sh/#/ or here https://www.youtube.com/watch?v=CvB9wc7p_bA&feature=youtu.be).
 
